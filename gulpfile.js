@@ -20,8 +20,71 @@
     var rename = require('gulp-rename');
     var concat = require('gulp-concat');
     var gulpBabel = require('gulp-babel');
-    
-    gulp.task('default',['allhtml','watch','connect']);
+    var  runSequence  = require('run-sequence');
+    gulp.task('start',function(cb){
+        runSequence(
+            ['startcss','startimages','startjs'],
+            'starthtml',
+            'startwatch',
+            'connect',
+        )
+    })
+    //gulp.task('default',['start'])
+    gulp.task('starthtml',function(){
+        gulp.src(['rev/**/*.json','app/**/*.html'])//将rev文件和绑定
+        .pipe(revCollector())
+        //.pipe(minify())
+        .pipe(gulp.dest('dist'))
+        .pipe(connect.reload())
+    })
+    gulp.task('startjs',function(){
+        gulp.src('app/**/*.js')
+        .pipe(gulpBabel({
+            presets:['@babel/env']
+        }))
+        //.pipe(concat('all.js'))
+        //.pipe(uglify())
+        .pipe(rev())
+        .pipe(gulp.dest('dist'))
+        .pipe(rev.manifest())//重新弄一个文件夹存放
+        .pipe(gulp.dest('rev'))
+        .pipe(connect.reload())
+        //.pipe(gulp.dest('dist'));
+    })
+    gulp.task('startimages',function(){
+        gulp.src('app/**/*')
+        .pipe(gulp.dest('dist'))
+        .pipe(connect.reload())
+    })
+    gulp.task('startcss',function(){
+        gulp.src('app/**/*.css')
+        .pipe(gulp.dest('dist'))
+        .pipe(connect.reload());
+    })
+    gulp.task('startwatch',function(){
+        gulp.watch('app/**/*.html',['starthtml']);
+        gulp.watch('app/**/*.js',['startjs']);
+        gulp.watch('app/**/*',['startimages']);
+        gulp.watch('app/**/*.css',['startcss']);
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   // gulp.task('default',['allhtml','watch','connect']);
     //展示页面
    gulp.task('allhtml',function(){
        //捕捉文件
@@ -33,7 +96,7 @@
     .pipe(gulp.dest('dist'))
     .pipe(connect.reload());//服务器自动刷新
    })
-   gulp.task('minjs',function(){
+   gulp.task('alljs',function(){
     gulp.src(['app/**/*.js'])//生成的的rev文件；
     .pipe(gulpBabel({
         presets:['@babel/env']
@@ -49,9 +112,9 @@
     .pipe(gulp.dest('rev'));
    })
    //监听，如果'app/**/*.html'右边，立刻执行'allhtml'
-   gulp.task('watch',function(){
-       gulp.watch('app/**/*.html',['allhtml'])
-   })
+//    gulp.task('watch',function(){
+//        gulp.watch('app/**/*.html',['allhtml'])
+//    })
    //建立服务器，执行服务器时即为打开
     gulp.task('connect',function(){
         console.log(444);

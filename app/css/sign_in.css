@@ -1,0 +1,289 @@
+*{padding:0;margin:0}
+a{
+    text-decoration: none;
+    outline: 0;
+}
+.header {
+    width: 970px;
+    height: 100px;
+    margin: 0 auto;
+}
+.header .logo{
+    float: left;
+    width: 189px;
+    height: 100%;
+    display: block;
+    background: url(../images/sign_in/logo.png) no-repeat center;   
+}
+
+.header .bind-phone {
+    float: left;
+    color: #333;
+    background: #fefff1;
+    border: 1px solid #fecd66;
+    line-height: 16px;
+    padding: 4px 6px;
+    font-size: 13px;
+}
+.header .advise {
+    float: right;
+    margin-top:8px;
+    color:#ccc;
+    font-size: 13px;
+}
+.header .advise:hover{
+    color:red;
+}
+.header .advise i {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    font-size: 12px;
+    font-family: simsun;
+    background: url(../images/sign_in/function.png) -67px -27px no-repeat;
+}
+.main{
+    position: relative;
+    margin:0 auto;
+    min-width:970px;
+    height: 570px;
+    background: url(../images/sign_in/0.png) center no-repeat;
+
+}
+.main .form-box{
+    width:360px;
+    height: 389px;
+    background: white;
+    position: absolute;
+    top:50px;
+    right:250px;
+}
+.main .form-box .left,.main .form-box .right{
+    display: block;
+    height: 50px;
+    width:180px;
+    float:left;
+    text-align: center;
+}
+.main .form-box a span{
+    width:180px;
+    height: 20px;
+    color:black;
+    margin-top:15px;
+    margin-bottom: 11px;
+}
+.main .form-box .top{
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+}
+.main .form-box a:hover{
+    color:red;
+    cursor:pointer;
+}
+.main .form-box .left span{
+    display: block;
+    width:179px;
+    border-right:1px solid #eee;
+}
+.main .form-box .right span{
+    display: block;
+    width:180px;
+}
+.main .form-box a i{
+    display: block;
+    height: 4px;
+    width:70px;
+    background: orange;
+    margin-left:55px;
+}
+.main .form-box .right i{
+    display:none;
+}
+.main .form-box .middle{
+    margin-top:50px;
+    height: 160px;
+    width:360px;
+    position: relative;
+}
+.main .form-box .middle .left_mask{
+    height: 141px;
+    width:141px; 
+    overflow: hidden;
+    position: absolute;
+    left:170px;
+    margin-left:-70px;
+}
+.main .form-box .middle .right_mask{
+    height: 160px;
+    width:160px;
+    position:absolute;
+    right:0px;
+    top:-30px;
+    display: none;
+}
+.main .form-box .open-app{
+    display: block;
+    width:300px;
+    height: 17.6px;
+    text-align: center;
+    margin:15px 0;
+    font-size: 12px;
+    position: relative;
+    padding-left:60px;
+}
+.main .form-box .open-app i{
+    height: 16px;
+    width:16px;
+    display: block;
+    position: absolute;
+    background: url(../images/sign_in/function.png) no-repeat left -164px top -67px;
+    left:110px;
+}
+.main .form-box .open-app a{
+    display: inline !important;
+    color:orange;
+
+}
+.main .form-box .sign{
+    display: none;
+}
+.main .form-box .sign .form_input{
+    padding: 40px 30px 20px 30px;
+    position: relative;
+}
+.main .form-box .sign .form_input .login-error{
+    width:270px;
+    height: 15px;
+    padding: 2px 10px;
+    font-size: 12px;
+    color: #323232;
+    background: #fff0f0;
+    border: 1px solid #ff3c3c;
+    position: absolute;
+    top:10px;
+    display:none;
+}
+.main .form-box .sign .form_input .login-error i{
+    display: block;
+    width:16px;
+    height: 16px;
+    background: url('../images/sign_in/function.png')no-repeat left -161px top -108px;
+    float:left;
+}
+.main .form-box .sign .form_input .login-error span{
+    float:left;
+    margin-left:8px;
+}
+.main .form-box .sign .form_input label{
+    width:300px;
+    height: 36px;
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+.main .form-box .sign .form_input label input{
+    width: 264px;
+    height: 100%;
+    outline: none;
+    border:none;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    float:right;
+}
+.main .form-box .sign .form_input label .iconfont-user{
+    height: 36px;
+    width:36px;
+    display: block !important;
+    float:left;
+    color:#ccc;
+    font-size: 36px;
+    background:url(../images/sign_in/function.png) no-repeat left -80px top -68px;
+}
+.main .form-box .sign .form_input label .iconfont-pass{
+    height: 36px;
+    width:36px;
+    display: block !important;
+    float:left;
+    color:#ccc;
+    font-size: 36px;
+    background:url(../images/sign_in/function.png) no-repeat left 0px top -108px;
+}
+.main .form-box .sign .form_input label em{
+    display: block;
+    width: 32px;
+    height: 36px;
+    top: 0;
+    right: 0;
+    background: url("../images/sign_in/function.png") -87px -120px no-repeat;
+    cursor: pointer;
+    position: absolute;
+    display: none;
+}
+.main .form-box .sign .form_input .userreset{
+    top:52px;
+    right:20px;
+}
+.main .form-box .sign .form_input .passreset{
+    top:110px;
+    right:20px;
+}
+.main .form-box .sign #login-submit {
+    display: block;
+    width: 300px;
+    line-height: 40px;
+    margin: 0 auto;
+    background: #f60;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+.main .form-box .sign #login-submit:hover{
+    cursor:pointer;
+}
+
+.main .form-box .sign .loginhelp{
+    height: 35px;
+    width:300px;
+    margin-left:30px;
+    margin-top:-20px;
+}
+.main .form-box .sign .loginhelp .phoneCode{
+    float:left;
+    width:102px;
+    line-height: 35px;
+    height: 35px;
+    color:#333;
+    font-size: 12px;
+    display: block;
+}
+.main .form-box .sign .loginhelp .forgetPass{
+    float:right;
+    width:60px;
+    line-height: 35px;
+    height: 35px;
+    color:#333;
+    font-size: 12px;
+    display: block;
+}
+.main .form-box .freereg{
+    text-align: center;
+    margin: 12px 0 35px;
+    color:black;
+    width:360px;
+    height: 16px;
+    font-size: 12px;
+    display: block;
+}
+.main .form-box .freereg:hover{
+    color:orangered;
+}
