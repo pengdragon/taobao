@@ -7,31 +7,48 @@
     cnpm install --save-dev gulp-imagemin 插件图片压缩
     cnpm install --save-dev gulp-minify-css 插件css压缩
     cnpm install --save-dev gulp-connect 插件服务器
-
-    
+    cnpm install gulp-rev-collector -D 生成标识码插件
+    cnpm install --save-dev gulp-rev 生成标识码插件
 
     */
+    var rev = require('gulp-rev');
+    var revCollector = require('gulp-rev-collector');
     var gulp = require('gulp');
     var connect = require('gulp-connect');
     var uglify = require('gulp-uglify');//js压缩
     var minify = require('gulp-minify-html');//html压缩
-    var imagemin = require('gulp-imagemin');//图片压缩
-    //var pngquant = require('imagemin-pngquant')//pnp图片压缩
-    //var minifyCss = require(' gulp-minify-css');//css压缩
     var rename = require('gulp-rename');
     var concat = require('gulp-concat');
+    var gulpBabel = require('gulp-babel');
+    
     gulp.task('default',['allhtml','watch','connect']);
     //展示页面
    gulp.task('allhtml',function(){
        //捕捉文件
-    gulp.src('app/**/*.html')
+    gulp.src(['rev/**/*.json','app/**/*.html'])//将rev文件和绑定
+    .pipe(revCollector())//用于将'rev/**/*.json'对应js和'app/**/*.html'中的js名称替换；
     //html压缩
     .pipe(minify())
     //放到dist中去
     .pipe(gulp.dest('dist'))
-    .pipe(connect.reload());
+    .pipe(connect.reload());//服务器自动刷新
    })
-   //监听
+   gulp.task('minjs',function(){
+    gulp.src(['app/**/*.js'])//生成的的rev文件；
+    .pipe(gulpBabel({
+        presets:['@babel/env']
+    }))
+    .pipe(uglify())
+    .on('error',function(err){
+        console.log(err.message);
+        this.emit('end');//emit为触发，触发end，触发这一步结束了，可以执行下一步了 因为如果有错服务器就会停止，有着这个，服务器就不会停止了
+    })
+    .pipe(rev())
+    .pipe(gulp.dest('dist'))
+    .pipe(rev.manifest())//重新弄一个文件夹存放
+    .pipe(gulp.dest('rev'));
+   })
+   //监听，如果'app/**/*.html'右边，立刻执行'allhtml'
    gulp.task('watch',function(){
        gulp.watch('app/**/*.html',['allhtml'])
    })
@@ -52,13 +69,13 @@
     
   
 
-    gulp.task('nimihtml',function(){
-        console.log('我要开始压缩htnl');
-    })
-    gulp.task('nimiimage',function(){
-        console.log('我要开始压缩image');
-    })
+    // gulp.task('nimihtml',function(){
+    //     console.log('我要开始压缩htnl');
+    // })
+    // gulp.task('nimiimage',function(){
+    //     console.log('我要开始压缩image');
+    // })
 
-    gulp.task('nimi',['nimihtml','nimiimage'],function(){
-    console.log('压缩成功');
-    })
+    // gulp.task('nimi',['nimihtml','nimiimage'],function(){
+    // console.log('压缩成功');
+    // })

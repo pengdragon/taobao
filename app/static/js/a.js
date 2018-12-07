@@ -1,5 +1,9 @@
-function count(){
-    var a = 1;
-    var b = 2;
-    console.log(a+b);
+function setClor(){
+   head.style.color = 'red';
+}
+setClor();
+class People{
+    constructor(name){
+        this.name = name;
+    }
 }

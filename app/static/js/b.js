@@ -1,3 +1,4 @@
-function getStyle(ele,attr){
-console.log(777777);
+function setBack(){
+    head.style.background="blue";
 }
+setBack();
