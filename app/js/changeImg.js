@@ -71,7 +71,7 @@ ChangeImage.prototype.showImage = function(index) {
 }
 ChangeImage.prototype.next = function() {
     this.index++;
-    this.showImage();
+    //this.showImage();
     // 点击以后重置自动播放
     this.autoPlay();
 }

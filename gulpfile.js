@@ -44,12 +44,12 @@
         }))
         //.pipe(concat('all.js'))
         //.pipe(uglify())
-        .pipe(rev())
+       // .pipe(rev())
+        //.pipe(gulp.dest('dist'))
+        //.pipe(rev.manifest())//重新弄一个文件夹存放
+        //.pipe(gulp.dest('rev'))
         .pipe(gulp.dest('dist'))
-        .pipe(rev.manifest())//重新弄一个文件夹存放
-        .pipe(gulp.dest('rev'))
         .pipe(connect.reload())
-        //.pipe(gulp.dest('dist'));
     })
     gulp.task('startimages',function(){
         gulp.src('app/**/*')
