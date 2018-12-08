@@ -41,7 +41,19 @@
             "version":[
                 "64G公开版","64G双网通版","无线套装"
             ],
-            "src":[
+            "srcBig":[
+                "../images/detail/201484531754442937622380_x.jpg",
+                "../images/detail/129114528518182540843673_x.png",
+                "../images/detail/140033980514240195843159_x.png",
+                "../images/detail/907993509171301034016798_x.png"
+            ],
+            "srcShow":[
+                "http://imgservice.suning.cn/uimg1/b2c/image/L21WQcMXaUfeEUICdiRAGQ.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/aSQXMELR5OYgbkMr0UiPsw.png_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/x3T82-EteK9QSEmDq5_puw.png_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/Gajs1RGltQBZztWGUtRfoQ.png_800w_800h_4e"
+            ],
+            "srcBtn":[
                 "http://imgservice.suning.cn/uimg1/b2c/image/MNilfqZ2r-8kk44HnqMTTg.jpg_60w_60h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/Ibnrw7NxWIE1kgsb2rhNKw.png_60w_60h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/9XM6OETWBpK9ghfNziMlDg.png_60w_60h_4e",
