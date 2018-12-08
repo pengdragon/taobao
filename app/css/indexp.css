@@ -1,0 +1,15 @@
+.detailp{
+    width:1200px;
+}
+.detailp li{
+    height: 100px;
+    width:100px;
+    float:left;
+    margin-left:20px;
+}
+.detailp li:nth-child(2n){
+    background: blueviolet;
+}
+.detailp li:nth-child(2n+1){
+    background: orange;
+}

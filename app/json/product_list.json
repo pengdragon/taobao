@@ -10,11 +10,23 @@
                 "6GB+128GB",
                 "6GB+64GB"
             ],
-            "src":[
+            "srcShow":[
+                "http://imgservice.suning.cn/uimg1/b2c/image/gsottk1v11q8WkoPSA3yVQ.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/H4aImQUAUFYh9T0u32yzrg.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/80Y2fdr5xPtRQRsTwajLHg.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/HE3oO8uUmVkyh0Et19OSew.jpg_800w_800h_4e"
+           ],
+            "srcBtn":[
                 "http://imgservice.suning.cn/uimg1/b2c/image/GRkU-_7uIy6ifBHQSAkB4A.jpg_60w_60h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/H4aImQUAUFYh9T0u32yzrg.jpg_800w_800h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/80Y2fdr5xPtRQRsTwajLHg.jpg_800w_800h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/HE3oO8uUmVkyh0Et19OSew.jpg_800w_800h_4e"
+            ],
+            "srcBig":[
+                "../images/detail/0.jpg",
+                "../images/detail/1.jpg",
+                "../images/detail/2.jpg",
+                "../images/detail/3.jpg"
             ],
             "color":[
                 {"src":"http://imgservice.suning.cn/uimg1/b2c/image/gsottk1v11q8WkoPSA3yVQ.jpg_60w_60h_4e","title":"幻夜黑"},
