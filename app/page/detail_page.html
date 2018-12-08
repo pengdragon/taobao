@@ -5,88 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-        ul {
-          list-style: none;
-        }
-       .contentp{
-           width:1920px;
-           background: pink;
-           margin:0 auto;
-           margin-top:110px;
-       }
-       .detail{
-           height: 600px;
-           width:800px;
-           background: rgba(226, 168, 168, 0.823);
-           float:left;
-       }
-        .box {
-          position: relative;
-          top:0px;
-          margin-left:40px;
-          float:left;
-        }
-        .show-image {
-          position: relative;
-          width: 450px;
-          font-size: 0;
-          border: 1px solid #ccc;
-          overflow: hidden;
-        }
-        .show-image img {
-          max-width: 100%;
-          max-height: 100%;
-        }
-        .filter {
-          position: absolute;
-          left: 0px;
-          top:0;
-          width: 150px;
-          height: 150px;
-         background: pink;
-         opacity: 0.4;
-          cursor: move;
-          display: none;
-        }
-        .img-box {
-          padding: 10px;
-        }
-        .img-box>li {
-          display: inline-block;
-          border: 1px solid transparent;
-          margin-left: 10px;
-        }
-        .img-box>li img{
-          width: 60px;
-          height: 60px;
-        }
-        .img-box>li:hover,
-        .img-box>li.active {
-          border: 1px solid orange;
-        }
-        .show-big-image {
-          position: absolute;
-          left: 450px;
-          top:0px;
-          width: 430px;
-          height: 430px;
-          overflow: hidden;
-          border: 1px solid #eee;
-          display: none;
-        }
-        .show-big-image img {
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 1080px;
-        }
-      </style>
+    <link rel="stylesheet" href="../css/detailp.css">
 </head>
 <body>
     <div class="contentp">
@@ -105,7 +24,49 @@
           <li><img alt=""></li>
         </ul>
       </div>
-      <div class="detail"></div>
+      <div class="detail">
+        <div class="title">
+            <h1>
+                <span class="zy">自营</span>
+               【到手价1399】华为/荣耀(honor) 8X Max 4GB+64GB 幻夜黑 全网通智能手机 移动联通电信4G全面屏手机 双卡双待
+            </h1>
+        </div>
+        <div class="priceDm">
+        <dl class="promPrice_main" style="display:block">
+            <dt><span class="w3" id="promPriceText">价格</span></dt>
+            <dd><span class="mainprice"><i>¥</i> <span class="price">1499.</span><span>00</span></span></dd>
+        </dl>
+        <dl class="weight"  style="display:block">
+           
+            <dt><span>重量</span></dt>
+            <dd>22kg</dd>
+        </dl>
+        <dl class="version">
+            <dt>
+                <span>版本</span>
+            </dt>
+            <dd>
+               <ul>
+                   <li><img src="" alt=""> <span></span></li>
+                   <li><img src="" alt=""> <span></span></li>
+                   <li><img src="" alt=""> <span></span></li> 
+               </ul>
+            </dd>
+        </dl>
+        <dl class="color">
+                <dt>
+                    <span>颜色</span>
+                </dt>
+                <dd>
+                   <ul>
+                       <li><img src="http://imgservice.suning.cn/uimg1/b2c/image/AMQe-ZNFUxtUX2bqO3e7Sg.jpg_60w_60h_4e" alt=""><span>4GB+128GB</span></li>
+                       <li style="background: blue"><img src="" alt=""> <span></span></li>
+                       <li  style="background: pink"><img src="" alt=""> <span></span></li> 
+                   </ul>
+                </dd>
+            </dl>
+        </div>
+      </div>
     </div>
     <script src="../js/jquery.js"></script>
       <script src="../js/filter.js"></script>
