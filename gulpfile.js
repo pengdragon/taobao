@@ -31,9 +31,10 @@
     })
     //gulp.task('default',['start'])
     gulp.task('starthtml',function(){
-        gulp.src(['rev/**/*.json','app/**/*.html'])//将rev文件和绑定
-        .pipe(revCollector())
+        //gulp.src(['rev/**/*.json','app/**/*.html'])//将rev文件和绑定
+        //.pipe(revCollector())
         //.pipe(minify())
+        gulp.src('app/**/*.html')
         .pipe(gulp.dest('dist'))
         .pipe(connect.reload())
     })

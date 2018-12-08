@@ -110,6 +110,8 @@ const sign_in = (function(){
                 }
             }
             if(userVal&&passVal.length>5){
+                if(localStorage.username!=""){
+                    localStorage.username!="";
                 sendAjax(apiObj.login,{
                     data:{username:userVal,password:passVal},
                     method:'post'
@@ -126,15 +128,18 @@ const sign_in = (function(){
                         this.login_error.style.display="none";
                         setTimeout(_=>{
                             location.href = '../index.html'
-                        },2000);
-                       
+                        },1000);
+                       localStorage.username = userVal;
                     }else{
                         this.login_error.style.display="block";
                         this.login_error_span.innerHTML = "该账户名不存在，忘记账户名或注册新账号?"
                     }
                 })
+            }else{
+                alert('当前已有账号登录');
             }
-            
+
+            } 
         }
         document.onkeydown = e=>{
             e = e || window.event;

@@ -34,3 +34,4 @@ $('.shades').on('mouseleave',function(){
     })
    
 })
+console.log(localStorage.username)
