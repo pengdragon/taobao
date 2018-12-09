@@ -1,71 +1,400 @@
 {
-    "code":1,
-    "data":[
+    "code": 1,
+    "data": [
         {
-            "title":"荣耀10青春版 幻彩渐变 2400万AI自拍 6.21英寸90%屏占比珍珠屏 4GB+64GB 幻夜黑 全网通版智能手机移动联通电信4G全面屏手机 双卡双待",
-            "price":1399,
-            "weight":"0.45kg",
-            "version":[
+            "title": "荣耀10青春版 幻彩渐变 2400万AI自拍 6.21英寸90%屏占比珍珠屏 4GB+64GB 幻夜黑 全网通版智能手机移动联通电信4G全面屏手机 双卡双待",
+            "price": 1399,
+            "weight": "0.45kg",
+            "version": [
                 "4GB+64GB",
                 "6GB+128GB",
                 "6GB+64GB"
             ],
-            "srcShow":[
+            "srcShow": [
                 "http://imgservice.suning.cn/uimg1/b2c/image/gsottk1v11q8WkoPSA3yVQ.jpg_800w_800h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/H4aImQUAUFYh9T0u32yzrg.jpg_800w_800h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/80Y2fdr5xPtRQRsTwajLHg.jpg_800w_800h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/HE3oO8uUmVkyh0Et19OSew.jpg_800w_800h_4e"
-           ],
-            "srcBtn":[
+            ],
+            "srcBtn": [
                 "http://imgservice.suning.cn/uimg1/b2c/image/GRkU-_7uIy6ifBHQSAkB4A.jpg_60w_60h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/H4aImQUAUFYh9T0u32yzrg.jpg_800w_800h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/80Y2fdr5xPtRQRsTwajLHg.jpg_800w_800h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/HE3oO8uUmVkyh0Et19OSew.jpg_800w_800h_4e"
             ],
-            "srcBig":[
+            "srcBig": [
                 "../images/detail/0.jpg",
                 "../images/detail/1.jpg",
                 "../images/detail/2.jpg",
                 "../images/detail/3.jpg"
             ],
-            "color":[
-                {"src":"http://imgservice.suning.cn/uimg1/b2c/image/gsottk1v11q8WkoPSA3yVQ.jpg_60w_60h_4e","title":"幻夜黑"},
-                {"src":"http://image2.suning.cn/uimg/b2c/newcatentries/0000000000-000000010673124844_1_60x60.jpg","title":"渐变红"},
-                {"src":"http://image4.suning.cn/uimg/b2c/newcatentries/0000000000-000000010673124843_1_60x60.jpg","title":"渐变蓝"},
-                {"src":"http://image1.suning.cn/uimg/b2c/newcatentries/0000000000-000000010673124964_1_60x60.jpg","title":"铃兰白"}
-            ]          
+            "color": [
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/gsottk1v11q8WkoPSA3yVQ.jpg_60w_60h_4e",
+                    "title": "幻夜黑"
+                },
+                {
+                    "src": "http://image2.suning.cn/uimg/b2c/newcatentries/0000000000-000000010673124844_1_60x60.jpg",
+                    "title": "渐变红"
+                },
+                {
+                    "src": "http://image4.suning.cn/uimg/b2c/newcatentries/0000000000-000000010673124843_1_60x60.jpg",
+                    "title": "渐变蓝"
+                },
+                {
+                    "src": "http://image1.suning.cn/uimg/b2c/newcatentries/0000000000-000000010673124964_1_60x60.jpg",
+                    "title": "铃兰白"
+                }
+            ]
         },
         {
-            "title":" 【预售到手4538】Apple iPhone 8 64GB 银色 移动联通电信4G手机",
-            "price":4538,
-            "version":[
-                "64G公开版","64G双网通版","无线套装"
+            "title": " 【预售到手4538】Apple iPhone 8 64GB 银色 移动联通电信4G手机",
+            "price": 4538,
+            "version": [
+                "64G公开版",
+                "64G双网通版",
+                "无线套装"
             ],
-            "srcBig":[
+            "srcBig": [
                 "../images/detail/201484531754442937622380_x.jpg",
                 "../images/detail/129114528518182540843673_x.png",
                 "../images/detail/140033980514240195843159_x.png",
                 "../images/detail/907993509171301034016798_x.png"
             ],
-            "srcShow":[
+            "srcShow": [
                 "http://imgservice.suning.cn/uimg1/b2c/image/L21WQcMXaUfeEUICdiRAGQ.jpg_800w_800h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/aSQXMELR5OYgbkMr0UiPsw.png_800w_800h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/x3T82-EteK9QSEmDq5_puw.png_800w_800h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/Gajs1RGltQBZztWGUtRfoQ.png_800w_800h_4e"
             ],
-            "srcBtn":[
+            "srcBtn": [
                 "http://imgservice.suning.cn/uimg1/b2c/image/MNilfqZ2r-8kk44HnqMTTg.jpg_60w_60h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/Ibnrw7NxWIE1kgsb2rhNKw.png_60w_60h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/9XM6OETWBpK9ghfNziMlDg.png_60w_60h_4e",
                 "http://imgservice.suning.cn/uimg1/b2c/image/rlQlOs1UMncEqRf31pV4tw.png_60w_60h_4e"
             ],
-            "color":[
-                {"src":"http://imgservice.suning.cn/uimg1/b2c/image/gkh-rNILgua2Vt0Pl_h0_g.jpg_60w_60h_4e","title":"深空灰"},
-                {"src":"http://imgservice.suning.cn/uimg1/b2c/image/WS8PkqFjOBZzuO_hWkXICA.jpg_60w_60h_4e","title":"红色"},
-                {"src":"http://imgservice.suning.cn/uimg1/b2c/image/6xWLDkTtJD1lQrHvUOt_rA.jpg_60w_60h_4e","title":"金色"},
-                {"src":"http://imgservice.suning.cn/uimg1/b2c/image/7wuA-Iep5KEq_8NVLZI_jw.jpg_60w_60h_4e"}
+            "color": [
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/gkh-rNILgua2Vt0Pl_h0_g.jpg_60w_60h_4e",
+                    "title": "深空灰"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/WS8PkqFjOBZzuO_hWkXICA.jpg_60w_60h_4e",
+                    "title": "红色"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/6xWLDkTtJD1lQrHvUOt_rA.jpg_60w_60h_4e",
+                    "title": "金色"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/7wuA-Iep5KEq_8NVLZI_jw.jpg_60w_60h_4e"
+                }
             ]
-
+        },
+        {
+            "title": " A.O.史密斯空气净化器KJ400F-B11+科沃斯扫地机器人CEN555",
+            "price": 4687,
+            "version": [
+                "简单版",
+                "优化版",
+                "豪华版"
+            ],
+            "srcBig": [
+                "../images/detail/945047558.jpg",
+                "../images/detail/3 (1).jpg",
+                "../images/detail/4.jpg",
+                "../images/detail/5.jpg"
+            ],
+            "srcShow": [
+                "http://imgservice.suning.cn/uimg1/pcms/newcatentries/AO4yWkzrVVqs-1cs32stKg.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/pcms/newcatentries/CXNH3-_K46fzPL1ICa1_fg.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/pcms/newcatentries/gmjGO7DaYYDdFFPO-THXOA.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/pcms/newcatentries/-OO6D7iM47-C_yG9Ey5hfQ.jpg_800w_800h_4e"
+            ],
+            "srcBtn": [
+                "http://imgservice.suning.cn/uimg1/pcms/newcatentries/AO4yWkzrVVqs-1cs32stKg.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/pcms/newcatentries/CXNH3-_K46fzPL1ICa1_fg.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/pcms/newcatentries/gmjGO7DaYYDdFFPO-THXOA.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/pcms/newcatentries/-OO6D7iM47-C_yG9Ey5hfQ.jpg_60w_60h_4e"
+            ]
+        },
+        {
+            "title": " 金泰昌(TAICHANG)足浴盆TC-Z5211智能型全自动按摩恒温深桶电动泡脚支持恒温功能支持电动滚轮内盆容量18.5",
+            "price": 329,
+            "version": [
+                "简单版",
+                "优化版",
+                "豪华版"
+            ],
+            "srcBig": [
+                "../images/detail/555194788101521035641685_x.jpg",
+                "../images/detail/123850357646025129191130_x.jpg",
+                "../images/detail/275339237647656900592161_x.jpg",
+                "../images/detail/967442739103475982551449_x.jpg"
+            ],
+            "srcShow": [
+                "http://imgservice.suning.cn/uimg1/b2c/image/9ltx6e3NAfTKngrmqR2sOw.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/bBZ8zTAo5rDrfxdYsKTo6w.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/R-a9UDArr20bTu9V_u6Zvw.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/hoAHbdKacjZb0VQtQi1gOQ.jpg_800w_800h_4e"
+            ],
+            "srcBtn": [
+                "http://imgservice.suning.cn/uimg1/b2c/image/9ltx6e3NAfTKngrmqR2sOw.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/bBZ8zTAo5rDrfxdYsKTo6w.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/R-a9UDArr20bTu9V_u6Zvw.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/hoAHbdKacjZb0VQtQi1gOQ.jpg_60w_60h_4e"
+            ],
+            "color": [
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/9ltx6e3NAfTKngrmqR2sOw.jpg_60w_60h_4e",
+                    "title": "TC-5211【3组转盘按摩】"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/maVfa1kvuKqSJljObeqkeQ.jpg_60w_60h_4e",
+                    "title": "TC-3211【4组按摩滚轮】"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/qT5Ae7hHCEBsM-j3Oed_FA.jpg_60w_60h_4e",
+                    "title": "TC-5501【太极转盘按摩+磨脚石】"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/8pvBb_38CjB0LHvNHfZuew.jpg_60w_60h_4e",
+                    "title": "TC-3085【太极转盘按摩】"
+                }
+            ]
+        },
+        {
+            "title": " 【限量送拉杆箱】三星(SAMSUNG) UA55NUC30SJXXZ 曲面55英寸液晶彩电4K超高清UHD智能曲屏电视机",
+            "price": 5999,
+            "srcBig": [
+                "../images/detail/201812071106329606_x.jpg",
+                "../images/detail/201812071106315718_x.jpg",
+                "../images/detail/201812071106315065_x.jpg",
+                "../images/detail/100587506225721366558246_x.jpg"
+            ],
+            "srcShow": [
+                "http://imgservice.suning.cn/uimg1/b2c/image/yhdVIiY1aF84Gyyq9sscFg.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/uAonQGQv69oLk4kOUYmPvg.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/wXgzFqB3zZ6dnKHRvbXbXQ.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/Z9xTUuekWR592o7FzEjmRA.jpg_800w_800h_4e"
+            ],
+            "srcBtn": [
+                "http://imgservice.suning.cn/uimg1/b2c/image/yhdVIiY1aF84Gyyq9sscFg.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/uAonQGQv69oLk4kOUYmPvg.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/wXgzFqB3zZ6dnKHRvbXbXQ.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/Z9xTUuekWR592o7FzEjmRA.jpg_60w_60h_4e"
+            ],
+            "color": [
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/yhdVIiY1aF84Gyyq9sscFg.jpg_60w_60h_4e",
+                    "title": "55吋 曲面新品"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/u319epR6qNIv2rpqRWAHiA.jpg_60w_60h_4e",
+                    "title": "55英寸 曲面 HDR 4K超高清"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/5EDJYEt2IRudGXHDNHi9Lw.jpg_60w_60h_4e",
+                    "title": "55英寸 曲面 HDR 内容更丰富"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/Ftte2LClpdWYG5cBeZqNJw.jpg_60w_60h_4e",
+                    "title": "65吋 曲面新品"
+                }
+            ]
+        },
+        {
+            "title": " 创维(SKYWORTH)75A7 75英寸 4K超高清光学防蓝光护眼智能液晶平板电视 2+16G大内存 丰富影视教育资源",
+            "price": 8999,
+            "srcBig": [
+                "../images/detail/201812081032042852_x.jpg",
+                "../images/detail/193277118484306590224950_x.jpg",
+                "../images/detail/201810291239579595_x.jpg",
+                "../images/detail/0000000000-000000010526100068_5.jpg"
+            ],
+            "srcShow": [
+                "http://imgservice.suning.cn/uimg1/b2c/image/foQ0gJUgnjx79drSyLRT8w.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/dd6abDLv-wznSYM3jdyQ9A==.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/69s-eRHLeY59sQfv1ha2AQ.jpg_800w_800h_4e",
+                "http://image.suning.cn/uimg/b2c/newcatentries/0000000000-000000010526100068_5.jpg_800w_800h_4e"
+            ],
+            "srcBtn": [
+                "http://imgservice.suning.cn/uimg1/b2c/image/foQ0gJUgnjx79drSyLRT8w.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/dd6abDLv-wznSYM3jdyQ9A==.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/69s-eRHLeY59sQfv1ha2AQ.jpg_60w_60h_4e",
+                "http://image.suning.cn/uimg/b2c/newcatentries/0000000000-000000010526100068_5.jpg_60w_60h_4e"
+            ],
+            "color": [
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/JsmLIqLpM8Q0eGisqmcJtw.jpg_60w_60h_4e",
+                    "title": "25核防蓝光人工智能4K电视-V8S系列"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/9gjQiXvyo3dcx9wdYaZDYg.jpg_60w_60h_4e",
+                    "title": "32吋简约高清电视"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/LJCY5PMw5VlpIHM9y0eX7Q.jpg_60w_60h_4e",
+                    "title": "64位芯片智能4K电视-M7S系列"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/foQ0gJUgnjx79drSyLRT8w.jpg_60w_60h_4e",
+                    "title": "75吋大屏防蓝光4K智能电视"
+                }
+            ]
+        },
+        {
+            "title": " 美的（Midea）3匹1级能效变频家用圆柱式立柜空调KFR-72LW/BP3DN8Y-YH200(B1)",
+            "price": 7499,
+            "version": [
+                "两匹",
+                "三匹"
+            ],
+            "srcBig": [
+                "../images/detail/201812081205245836_x.jpg",
+                "../images/detail/0000000000-000000010229075003_3.jpg",
+                "../images/detail/0000000000-000000010229075003_3.jpg",
+                "../images/detail/0000000000-000000010229075003_5.jpg"
+            ],
+            "srcShow": [
+                "http://imgservice.suning.cn/uimg1/b2c/image/8ZqI8J78fg8bXqYIOFhHBw.jpg_800w_800h_4e",
+                "http://image.suning.cn/uimg/b2c/newcatentries/0000000000-000000010229075003_3.jpg_800w_800h_4e",
+                "http://image.suning.cn/uimg/b2c/newcatentries/0000000000-000000010229075003_4.jpg_800w_800h_4e",
+                "http://image.suning.cn/uimg/b2c/newcatentries/0000000000-000000010229075003_5.jpg_800w_800h_4e"
+            ],
+            "srcBtn": [
+                "http://imgservice.suning.cn/uimg1/b2c/image/8ZqI8J78fg8bXqYIOFhHBw.jpg_60w_60h_4e",
+                "http://image.suning.cn/uimg/b2c/newcatentries/0000000000-000000010229075003_3.jpg_60w_60h_4e",
+                "http://image.suning.cn/uimg/b2c/newcatentries/0000000000-000000010229075003_4.jpg_60w_60h_4e",
+                "http://image.suning.cn/uimg/b2c/newcatentries/0000000000-000000010229075003_5.jpg_60w_60h_4e"
+            ],
+            "color": [
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/6oqFwYKtiU5yK4VYv6DBMw.jpg_60w_60h_4e",
+                    "title": "FUN华-变频2级"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/rWvcOXq41sWfrkXOwSmxUg.jpg_60w_60h_4e",
+                    "title": "WYS-变频1级"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/8ZqI8J78fg8bXqYIOFhHBw.jpg_60w_60h_4e",
+                    "title": "智行-变频1级"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/ZzZKUHOOoHBeaLjalY-H6A.jpg_60w_60h_4e",
+                    "title": "皓行-变频2级"
+                }
+            ]
+        },
+        {
+            "title": " 美的空调（Midea） 大1.5匹 冷暖 变频 智能 家用空调挂机 挂壁式空调 KFR-35GW/WDAA3@",
+            "price": 2799,
+            "version": [
+                "大1匹",
+                "大1.5匹"
+            ],
+            "srcBig": [
+                "../images/detail/186536162269776447541283_x.png",
+                "../images/detail/155436563719089355414003_x.jpg",
+                "../images/detail/198359978917657007041087_x.jpg",
+                "../images/detail/183030174080355811186468_x.jpg"
+            ],
+            "srcShow": [
+                "http://imgservice.suning.cn/uimg1/b2c/image/Lhyduqc_MLNR7bWVAqhzZw.png_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/nwancpxbKAi_ivnyiNQEqg.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/IvwIeOzI5NHFXgvQmOyyEA.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/EiLkCqXJ-9Bq0KiOebkEhg.jpg_800w_800h_4e"
+            ],
+            "srcBtn": [
+                "http://imgservice.suning.cn/uimg1/b2c/image/Lhyduqc_MLNR7bWVAqhzZw.png_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/nwancpxbKAi_ivnyiNQEqg.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/IvwIeOzI5NHFXgvQmOyyEA.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/EiLkCqXJ-9Bq0KiOebkEhg.jpg_60w_60h_4e"
+            ],
+            "color": [
+                {
+                    "title": "智弧-3级定频"
+                },
+                {
+                    "title": "大1.5匹 智弧-3级定频"
+                },
+                {
+                    "title": "大1.5匹 省电星-2级变频"
+                }
+            ]
+        },
+        {
+            "title": " 顾家家居KUKa真皮沙发头层牛皮沙发简约现代客厅组合家具爱舒仕1897B 烟灰色(3+躺左）",
+            "price": 8099,
+            "srcBig": [
+                "../images/detail/127103809162530937124386_x.jpg",
+                "../images/detail/599578753103981190129600_x.png",
+                "../images/detail/151824457973583985021370_x.jpg",
+                "../images/detail/533814091108750841995300_x.png"
+            ],
+            "srcShow": [
+                "http://imgservice.suning.cn/uimg1/b2c/image/lntOyYNjpfZ_DBWlSZ_-nQ.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/rK4jyAPKecNcjsxPKSV_eA==.png_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/dV0tH0j4DoM_wgbqwX6nsg==.jpg_800w_800h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/6ryazhOGLZ3hc-90ONx2OA==.png_800w_800h_4e"
+            ],
+            "srcBtn": [
+                "http://imgservice.suning.cn/uimg1/b2c/image/lntOyYNjpfZ_DBWlSZ_-nQ.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/rK4jyAPKecNcjsxPKSV_eA==.png_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/dV0tH0j4DoM_wgbqwX6nsg==.jpg_60w_60h_4e",
+                "http://imgservice.suning.cn/uimg1/b2c/image/6ryazhOGLZ3hc-90ONx2OA==.png_60w_60h_4e"
+            ],
+            "color": [
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/WVHNHTYorNjRpxzk_vaIDw.jpg_60w_60h_4e",
+                    "title": "烟灰色(3+躺左）"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/iRlPgahRSCmPrO4aOiDTwQ.jpg_60w_60h_4e",
+                    "title": "烟灰色(3+躺右）"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/vwGUq9aJDJp2n45vVZPWNg.jpg_60w_60h_4e",
+                    "title": "深咖啡色(1+3+躺左)"
+                },
+                {
+                    "src": "http://imgservice.suning.cn/uimg1/b2c/image/-57TgvCf8z-v-__KjEHftw.jpg_60w_60h_4e",
+                    "title": "藕色(1+3+躺右)"
+                }
+            ]
+        },
+        {
+            "title": " 顾家家居KUKa 欧式客厅木质实木躺椅凳组合DS1320高靠背可调节拆洗办公室午休单椅XJ 山石灰（含脚凳）",
+            "price": 1998,
+            "srcBig": [
+                "../images/detail/0070139843-000000010065237945_2.jpg",
+                "../images/detail/0070139843-000000010065237945_3.jpg",
+                "../images/detail/0070139843-000000010065237945_4.jpg",
+                "../images/detail/0070139843-000000010065237945_5.jpg"
+            ],
+            "srcShow": [
+                "http://image.suning.cn/uimg/b2c/newcatentries/0070139843-000000010065237945_2.jpg_800w_800h_4e",
+                "http://image.suning.cn/uimg/b2c/newcatentries/0070139843-000000010065237945_3.jpg_800w_800h_4e",
+                "http://image.suning.cn/uimg/b2c/newcatentries/0070139843-000000010065237945_4.jpg_800w_800h_4e",
+                "http://image.suning.cn/uimg/b2c/newcatentries/0070139843-000000010065237945_5.jpg_800w_800h_4e"
+            ],
+            "srcBtn": [
+                "http://image.suning.cn/uimg/b2c/newcatentries/0070139843-000000010065237945_2.jpg_60w_60h_4e",
+                "http://image.suning.cn/uimg/b2c/newcatentries/0070139843-000000010065237945_3.jpg_60w_60h_4e",
+                "http://image.suning.cn/uimg/b2c/newcatentries/0070139843-000000010065237945_4.jpg_60w_60h_4e",
+                "http://image.suning.cn/uimg/b2c/newcatentries/0070139843-000000010065237945_5.jpg_60w_60h_4e"
+            ],
+            "color": [
+                {
+                    "src": "http://image.suning.cn/uimg/b2c/newcatentries/0070139843-000000010065237946_1.jpg_60w_60h_4e",
+                    "title": "月牙黄（含脚凳）"
+                },
+                {
+                    "src": "http://image.suning.cn/uimg/b2c/newcatentries/0070139843-000000010065237947_1.jpg_60w_60h_4e",
+                    "title": "山石灰（含脚凳））"
+                }
+            ]
         }
     ]
 }
