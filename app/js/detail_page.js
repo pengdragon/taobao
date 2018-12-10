@@ -5,10 +5,30 @@ function Detail(obj){
     this.$title = this.$detail.firstElementChild.firstElementChild;
     console.log(this.$title)
     this.data = JSON.parse(localStorage.getItem('product'));
+
+    //添加商品
+    this.$addBtn = $('.addBtn');
+    this.$reduceBtn = $(".reduceBtn");
+    this.$count = document.querySelector('.countp');
     this.init();
 }
 Detail.prototype.init = function(){
     this.insertData();
+    this.$addBtn.click(_=>{
+        this.add();
+    })
+    this.$reduceBtn.click(_=>{
+        this.reduce();
+    })
+}
+Detail.prototype.add = function(){
+    this.$count.value++;
+}
+Detail.prototype.reduce= function(){
+    this.$count.value--;
+    if(this.$count.value<=1){
+        this.$count.value=1;
+    }
 }
 Detail .prototype.insertData = function(){
     this.$titleTxt = document.createTextNode(this.data.title)
@@ -46,7 +66,7 @@ Detail .prototype.insertData = function(){
         }
     }
     if(this.data.color){
-        console.log(this.data.color)
+       // console.log(this.data.color)
         $('.priceDm').append(` <dl class="color">
         <dt>
             <span>颜色</span>
@@ -66,41 +86,5 @@ Detail .prototype.insertData = function(){
     }
 }
 //加入数量
-var count = (function() {
-    // 获取所有添加按钮
-    var $addBtnAll = document.querySelectorAll('.add');
-    // 获取所有清除按钮
-    var $clearBtnAll =  document.querySelectorAll('.clear')
-    return {
-        init() {
-            this.event();
-        },
-        event() {
-            const _this = this;
-            for(var i = 0; i < $addBtnAll.length; i++) {
-                    (function() {
-                        var  count = 0
-                        $addBtnAll[i].onclick = function() {
-                            count++;
-                            _this.set(this.parentNode, count, 'p');
-                        }
-                        $clearBtnAll[i].onclick = function() {
-                            count = 0;
-                            _this.set(this.parentNode, count, 'p')
-                        }
 
-                    }())
-                
-            }
-        },
-        set(ele, val, child) {
-            // 如果传入了子类名
-            if(child) {
-                ele.querySelector(child).innerHTML = val;
-            } else {
-                ele.innerHTML = val;
-            }
-        }
-    }
-}())
-count.init()
+
