@@ -9,8 +9,8 @@
                     let data = res.data[index];
                    // console.log(data)
                     data = JSON.stringify(data);
-                    // localStorage.removeItem('username');
-                    // localStorage.removeItem('user');
+                    localStorage.removeItem('username');
+                    localStorage.removeItem('user');
                     localStorage.removeItem('productList');
                     localStorage.setItem('product',data);
                     location.href = "page/detail_page.html";
