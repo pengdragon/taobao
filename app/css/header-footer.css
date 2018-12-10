@@ -220,7 +220,8 @@ body{
 	height: 35px;
 	margin-left: 10px;
 }
-.header-right .d-zhucedenglu a:hover{
+
+.header-right .none-block:hover{
 	color: #F60;
 }
 .d-zhucedenglu a:nth-child(1){
@@ -569,7 +570,7 @@ body{
 }
 #footerd .footerd-box1{
 	display: block;
-	margin: 0 auto;
+	
 	overflow: hidden;
 	border: 1px solid #eaeaea;
 	min-width: 1280px;
@@ -579,9 +580,11 @@ body{
 }
  .footerd-box1 .footerd-boxup{
 	display: block; 
+	width: 1000px;
 	border-bottom: 1px solid #ccc;
 	 height: 73px;
 	 padding: 12px;
+	 margin: 0 auto;
 	
 	 
 	
@@ -591,7 +594,7 @@ body{
 	float: left;
 	width: 200px;
 	overflow: hidden;
-	margin-left: 100px;
+	
  }
  .footerd-boxup .boxupimage{
 	float: left;
@@ -732,8 +735,8 @@ body{
 	overflow: hidden;
     font-size: 0;
 }
-.footerd-bo1 .footerd-boxdown{
-	float: left;
+.footerd-box1 .footerd-boxdown{
+	width: 1000px;
 	height: 180px;
 	margin: 0 auto;
 	
@@ -743,14 +746,11 @@ body{
 	display: block;
 	float: left;
     height: 170px;
-	width: 140px;
-	margin-left: 40px;
-	
-
+	width: 160px;
+	margin: 0 auto;
 }
 .footerd-boxdown dl dt{
 	display: block;
-	
     line-height: 40px;
     font-weight: 700;
     color: #545454;
