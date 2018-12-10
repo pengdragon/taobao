@@ -10,16 +10,31 @@ function Detail(obj){
     this.$addBtn = $('.addBtn');
     this.$reduceBtn = $(".reduceBtn");
     this.$count = document.querySelector('.countp');
+    //点击购买或点击加入购物车
+    this.$btnBuy = $('.btnbuy');
+    this.$btnAddShop = $('.btnaddshop');
+    //console.log( this.$btnBuy)
     this.init();
 }
 Detail.prototype.init = function(){
     this.insertData();
+    //增加商品数量
     this.$addBtn.click(_=>{
         this.add();
     })
+    //减少商品数量
     this.$reduceBtn.click(_=>{
         this.reduce();
     })
+    //点击购买
+    this.$btnBuy.click(_=>{
+        this.btnBuy();
+    })
+    //点击加入购物车，将数据存储于本地
+    this.$btnAddShop.click(_=>{
+        this.btnAddShop();
+    })
+    console.log(localStorage.username)
 }
 Detail.prototype.add = function(){
     this.$count.value++;
@@ -30,7 +45,17 @@ Detail.prototype.reduce= function(){
         this.$count.value=1;
     }
 }
-Detail .prototype.insertData = function(){
+Detail.prototype.btnBuy = function(){
+    if(localStorage.getItem('username')){
+        alert('请扫码支付')
+    }else{
+        alert('请先登录')
+    }
+}
+Detail.prototype.btnAddShop = function(){
+
+}
+Detail.prototype.insertData = function(){
     this.$titleTxt = document.createTextNode(this.data.title)
     this.$title.appendChild(this.$titleTxt);
     let _this = this;
