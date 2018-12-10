@@ -153,7 +153,7 @@
     height: 20.8px;;
 }
   .weight dt span,.version dt span,.color dt span{
-    letter-spacing: .5em;
+    letter-spacing: 1em;
     display: block;
     height: 36px;
     line-height: 36px;
@@ -196,9 +196,9 @@
       font-size: 12px;
   }
   #buycount{
-    height: 100px;
-    width:300px;
-    background: #f50;
+    height: 30px;
+    width:165px;
+    /* background: #f50; */
     clear:both;
     padding-left:10px;
     margin-top:50px;
@@ -208,7 +208,66 @@
   }
   #buycount dt span{
     letter-spacing: 1em;
+    display: block;
+    height: 36px;
+    line-height: 30px;
+    color: #999;
   }
   #buycount dd{
     float:left;
   }
+  #buycount dd button{
+    height: 30px;
+    width:22px;
+    outline: none;
+    border:none;
+    font-size: 16px;
+  }
+  #buycount dd input{
+    width:37px;
+    height: 30px;
+    outline: none;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+  }
+ .mainbtns{
+   padding-left:68px;
+   padding-top:30px;
+   position: relative;
+ }
+ .mainbtns span{
+   display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width:100px;
+    float:left;
+    margin-left:0px;
+ }
+ .mainbtns .btnbuy{
+   background: #663200;
+   color: #fff;
+    font: 16px/40px microsoft yahei;
+    font-weight: 600;
+    border-radius: 3px;
+    width: 115px;
+    height: 40px;
+    margin-right:30px;
+ }
+ .mainbtns .btnaddshop{
+   background: #f50;
+   color: #fff;
+   font: 16px/40px microsoft yahei;
+   font-weight: 600;
+   border-radius: 3px;
+   width: 135px;
+   height: 40px;
+ }
+ .mainbtns .pl-gouwuche{
+   position: absolute;
+   font-size: 26px;
+   top:36px;
+   left:214px;
+   color:white;
+ }
