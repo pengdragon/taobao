@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>苏宁易购</title>
     <link rel="stylesheet" href="../css/detailp.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_958130_m6zx3g40tjf.css">
 </head>
 <body>
     <div class="contentp">
@@ -28,43 +29,28 @@
         <div class="title">
             <h1>
                 <span class="zy">自营</span>
-               【到手价1399】华为/荣耀(honor) 8X Max 4GB+64GB 幻夜黑 全网通智能手机 移动联通电信4G全面屏手机 双卡双待
+               
             </h1>
         </div>
         <div class="priceDm">
-        <dl class="promPrice_main" style="display:block">
-            <dt><span class="w3" id="promPriceText">价格</span></dt>
-            <dd><span class="mainprice"><i>¥</i> <span class="price">1499.</span><span>00</span></span></dd>
-        </dl>
-        <dl class="weight"  style="display:block">
-           
-            <dt><span>重量</span></dt>
-            <dd>22kg</dd>
-        </dl>
-        <dl class="version">
+        </div>
+       
+        <dl id="buycount">
             <dt>
-                <span>版本</span>
+                <span>数量</span>
             </dt>
             <dd>
-               <ul>
-                   <li><img src="" alt=""> <span></span></li>
-                   <li><img src="" alt=""> <span></span></li>
-                   <li><img src="" alt=""> <span></span></li> 
-               </ul>
+               <button class="reduceBtn">-</button>
+               <input type="text" value="1" class="countp">
+               <button class="addBtn">+</button>
             </dd>
         </dl>
-        <dl class="color">
-                <dt>
-                    <span>颜色</span>
-                </dt>
-                <dd>
-                   <ul>
-                       <li><img src="http://imgservice.suning.cn/uimg1/b2c/image/AMQe-ZNFUxtUX2bqO3e7Sg.jpg_60w_60h_4e" alt=""><span>4GB+128GB</span></li>
-                       <li style="background: blue"><img src="" alt=""> <span></span></li>
-                       <li  style="background: pink"><img src="" alt=""> <span></span></li> 
-                   </ul>
-                </dd>
-            </dl>
+        <div class="mainbtns">   
+            <span class="btnbuy">立即购买</span>
+           <div class="addshop">
+               <i class="pl pl-gouwuche"></i>
+               <span class="btnaddshop">加入购物车</span>
+           </div>
         </div>
       </div>
     </div>
@@ -74,6 +60,7 @@
       <script>
       const filter = new  Filter({ele:'.box'});
       filter.init();
-      </script>
+      const detail = new Detail({ele:'.detail'})
+     </script>
 </body>
 </html>
