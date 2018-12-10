@@ -21,7 +21,7 @@
     var concat = require('gulp-concat');
     var gulpBabel = require('gulp-babel');
     var  runSequence  = require('run-sequence');
-    gulp.task('start',function(cb){
+    gulp.task('dev',function(cb){
         runSequence(
             ['startcss','startimages','startjs'],
             'starthtml',
