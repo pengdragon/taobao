@@ -57,7 +57,7 @@
             presets:['@babel/env']
         }))
         //.pipe(concat('all.js'))
-        //.pipe(uglify())
+        .pipe(uglify())
        // .pipe(rev())
         //.pipe(gulp.dest('dist'))
         //.pipe(rev.manifest())//重新弄一个文件夹存放
@@ -80,7 +80,7 @@
         gulp.watch('app/**/*.js',['startjs']);
         gulp.watch('app/**/*',['startimages']);
         gulp.watch('app/**/*.css',['startcss']);
-        gulp.watch('app/sass/*.scss',['sass']);
+        gulp.watch('app/css/*.scss',['sass']);
     })
 
 
