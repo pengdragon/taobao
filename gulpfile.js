@@ -21,15 +21,28 @@
     var concat = require('gulp-concat');
     var gulpBabel = require('gulp-babel');
     var  runSequence  = require('run-sequence');
+    var sass = require('gulp-sass');
+    sass.compiler = require('node-sass');
+    const image = require('gulp-image');
     gulp.task('dev',function(cb){
         runSequence(
-            ['startcss','startimages','startjs'],
+            ['images','startjs','sass'],
             'starthtml',
             'startwatch',
             'connect',
         )
     })
-    //gulp.task('default',['start'])
+    gulp.task('images',function(){//图片压缩
+        gulp.src('app/images/**/*')
+        .pipe(image())
+        .pipe(gulp.dest('dist/images'));
+    })
+    gulp.task('sass', function () {
+        return gulp.src('app/css/*.scss')//进入sass文件夹，然后选择其文件夹下所有的sass文件
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('dist/css')); //在dist下创建一个css文件夹，将sass预编译后的css文件放在其中；
+      });
+
     gulp.task('starthtml',function(){
         //gulp.src(['rev/**/*.json','app/**/*.html'])//将rev文件和绑定
         //.pipe(revCollector())
@@ -67,6 +80,7 @@
         gulp.watch('app/**/*.js',['startjs']);
         gulp.watch('app/**/*',['startimages']);
         gulp.watch('app/**/*.css',['startcss']);
+        gulp.watch('app/sass/*.scss',['sass']);
     })
 
 
