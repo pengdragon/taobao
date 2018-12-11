@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>shopcar</title>
+    <link rel="stylesheet" href="../css/demo.css">
+    <link rel="stylesheet" href="../css/shopcarzdb.css">
+</head>
+<body>
+    
+    <div id="shopcard-bigbox">
+        <div class="shopcar-header">
+            <div class="shopcar1-header">
+                <div class="shopcar2-header">
+                    <div class="shopcar-checkoutbox">
+                    <div class="shopcar-checkout">
+                        <input class="zincheckout" type="checkbox" name="zcheckbox" id="zcheckbox">
+                        <!-- 全选按钮 -->
+                        <label for="zcheckbox"></label>
+                        <span class="zcheckboxqx">全选</span>
+                    </div>
+                    </div>
+                    <div class="sp-xinxi">商品信息</div>
+                    <div class="sp-guige">规格</div>
+                    <div class="sp-danjia">单价（元）</div>
+                    <div class="sp-shuliang">数量</div>
+                    <div class="sp-xiaoji">小计（元）</div>
+                    <div class="sp-caozuo">操作</div>
+                </div>
+            </div>
+        </div>
+        <!-- 购物车框架商品所属信息列 -->
+        <div class="shopcar-body">
+            <div class="shopcar-bodyup">
+           
+               <div class="bodyspxqbox">
+                   <div class="bobyspxqboxlist">
+                <p class="spdanxuan-p">
+                       <input class="spdanxuan-d" type="checkbox" name="spdanxuan" id="spdanxuan">
+                   </p>
+                   <!-- 商品单选按钮 -->
+                  <div class="spimg-div">
+                   <p class="spimg-p"><img class="spimg" src="http://imgservice.suning.cn/uimg1/b2c/image/H4aImQUAUFYh9T0u32yzrg.jpg_800w_800h_4e" alt=""></p>
+                   <p class="spname-p"><a class="spname" href="">荣耀10青春版 幻彩渐变 2400万AI自拍 6.21英寸90%屏占比珍珠屏 4GB+64GB 幻夜黑 全网通版智能手机移动联通电信4G全面屏手机 双卡双待</a></p>
+                 </div>
+                  <!-- 商品图片跟文字描述 -->
+                 <div class="emptybox">
+
+                 </div>
+              <div class="spdanjia-div">
+              <span class="spdanjia">
+                  <em>￥ 7990.00</em> 
+              </span>
+              <!-- 商品单价 -->
+            </div>
+            <div class="spjiahaoanniu-div">
+                <div class="spjiajiangn">
+                    <a class="spjianhaobtn" href="">-</a>
+                    <!-- 减号 -->
+                    <input class="sptext" type="text" name="spval" id="spval" value="1">
+                    <!-- 文字区 -->
+                    <a class="spjiahaobtn" href="">+</a>
+                    <!-- 加号 -->
+                </div>
+              </div>
+              <!-- 商品增加减少按钮 -->
+              <div class="spxiaoji-div">
+                    <b class="spxiaoji">7988</b>
+                </div>
+                <div class="spshanchubox">
+                    <a class="spshanchu" href="#">
+                        <b>删除此商品</b>
+                    </a>
+                </div>
+                </div> 
+              
+            </div>  
+            </div>
+            <!-- 商品详情 -->  
+            <div class="shopcar-bodydown"></div>
+        </div>
+        <!-- 商品具体信息数据渲染区 -->
+        <div class="shopcar-footer">
+            <div  class="clear-allbox">
+                    <a class="cleardall" href="">删除选中</a>
+            </div>
+            <!-- 删除选中按钮 -->
+            <div class="emptybox"></div>
+            <div class="emptybox"> </div>
+            <div class="emptybox"> </div>
+            <div class="yixuansqbox">
+                <span>已选商品：</span> <a class="yixuansq" href="">15</a> &nbsp;&nbsp;&nbsp;<span>件</span>
+            </div>
+            <!-- 已选商品 -->
+            <div class="sqzjbox">
+               <span>商品总价：</span>
+                <a class="sqzj" href="">
+                    22222
+                </a>
+                <em>元（人民币）</em>
+            </div>
+            <!-- 商品总价 -->
+            <div class="sqjs-box">
+                <a class="sqjsa" href="">
+                    <b >去结算</b>
+                </a>
+            </div>
+            <!-- 结算按钮 -->
+        </div>
+        <!-- 购物车尾部 -->
+    </div>
+    <script src="../js/shop_car.js"></script>
+    <script>
+    const shopCar = new ShopCar({ele:'.bodyspxqbox'});
+    shopCar.init();
+    </script>
+</body>
+</html>
