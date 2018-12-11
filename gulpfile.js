@@ -82,7 +82,15 @@
         gulp.watch('app/**/*.css',['startcss']);
         gulp.watch('app/css/*.scss',['sass']);
     })
-
+//建立服务器，执行服务器时即为打开
+gulp.task('connect',function(){
+    console.log(444);
+    connect.server({
+        root:'dist',
+        port:'7777',
+        livereload:true
+    });
+});
 
 
 
@@ -130,15 +138,7 @@
 //    gulp.task('watch',function(){
 //        gulp.watch('app/**/*.html',['allhtml'])
 //    })
-   //建立服务器，执行服务器时即为打开
-    gulp.task('connect',function(){
-        console.log(444);
-        connect.server({
-            root:'dist',
-            port:'7777',
-            livereload:true
-        });
-    });
+   
 
 
 

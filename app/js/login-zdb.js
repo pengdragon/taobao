@@ -1,5 +1,5 @@
 (function(){
-    console.log(1)
+    console.log(localStorage)
     function login_zdb(){
       this.$none_block = document.querySelector(".none-block");
       this.$reg = this.$none_block.nextElementSibling;

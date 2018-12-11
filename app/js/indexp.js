@@ -10,7 +10,7 @@
                    // console.log(data)
                    data.id = index+1;
                     data = JSON.stringify(data);
-                    localStorage.removeItem('username');
+                    //localStorage.removeItem('username');
                     localStorage.removeItem('user');
                     localStorage.removeItem('productList');
                     localStorage.setItem('product',data);

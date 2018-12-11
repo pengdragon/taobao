@@ -1,4 +1,6 @@
+
 //渲染商品信息
+console.log(localStorage);
 function Detail(obj){
     if(typeof obj.ele ==='string')obj.ele = document.querySelector(obj.ele);
     this.$detail = obj.ele;
@@ -6,9 +8,29 @@ function Detail(obj){
     console.log(this.$title)
     this.data = JSON.parse(localStorage.getItem('product'));
 
-    //添加头部和尾部
     $('#headerp').load('header.html #header',function(){
+         //登录后的状态
+    this.$none_block = document.querySelector(".none-block");
+    this.$reg = this.$none_block.nextElementSibling;
+    this.$userinp = document.querySelector('#gwcdl');
         console.log('引入头部');
+        if(!localStorage.username){
+            this.$none_block.innerHTML="请登录";
+            this.$userinp.value="登录";
+           
+         }else{
+             let username = localStorage.getItem('username');
+             username = '彭龙';
+             this.$none_block.innerHTML= username;
+             this.$userinp.value=username;
+             this.$none_block.style.background="orange";
+             this.$none_block.style.color="white";
+             this.$none_block.style.padding="3px";
+             console.log(localStorage.username)
+         }
+         this.$reg.onclick = function(){
+             open('register.html');
+         }
         $(function () {
             $(".navigation-bar").mouseenter(function () {
                 $(".nab-particulars").toggle(true);
