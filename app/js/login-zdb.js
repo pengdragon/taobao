@@ -19,7 +19,7 @@
         if(!localStorage.username){
             this.$none_block.innerHTML="请登录";
             this.$userinp.value="登录";
-            console.log(4)
+           
          }else{
              let username = localStorage.getItem('username');
              username = '彭龙';
@@ -28,7 +28,7 @@
              this.$none_block.style.background="orange";
              this.$none_block.style.color="white";
              this.$none_block.style.padding="3px";
-             console.log(5)
+             console.log(localStorage.username)
          }
       }
     }
