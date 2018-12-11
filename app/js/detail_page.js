@@ -6,6 +6,14 @@ function Detail(obj){
     console.log(this.$title)
     this.data = JSON.parse(localStorage.getItem('product'));
 
+    //添加头部和尾部
+    $('#headerp').load('header.html #header',function(){
+        console.log('引入头部');
+    });
+    $('#footerp').load('footer.html #footerd',function(){
+        console.log('引入尾部');
+   
+    });
     //添加商品
     this.$addBtn = $('.addBtn');
     this.$reduceBtn = $(".reduceBtn");
@@ -32,7 +40,7 @@ Detail.prototype.init = function(){
     })
     //点击加入购物车，将数据存储于本地
     this.$btnAddShop.click(_=>{
-        this.btnAddShop();
+        this.seItem();
     })
     console.log(localStorage.username)
 }
@@ -52,8 +60,27 @@ Detail.prototype.btnBuy = function(){
         alert('请先登录')
     }
 }
-Detail.prototype.btnAddShop = function(){
-
+//商品信息的存储
+Detail.prototype.seItem = function(){
+    this.data["count"] = Number(this.$count.value);
+    var shopList = localStorage.getItem('shopList') || '[]';
+    shopList = JSON.parse(shopList);
+    for(var i = 0; i < shopList.length; i++) {
+        if(this.data.id == shopList[i].id) {
+            // 此商品已经存在
+            shopList[i].count+=this.data.count;
+            break;
+        }                         
+    }
+    if(i == shopList.length) {
+        // 商品不存在
+        shopList.push(this.data);
+        console.log(this.data);
+    }     
+      // 在把全部数据存到本地
+      //localStorage.shopList = JSON.stringify(shopList);  
+     localStorage.removeItem('shopList'); 
+    //console.log(JSON.parse(localStorage.getItem('shopList')));
 }
 Detail.prototype.insertData = function(){
     this.$titleTxt = document.createTextNode(this.data.title)

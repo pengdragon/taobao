@@ -8,6 +8,7 @@
                 if(res.code==1){
                     let data = res.data[index];
                    // console.log(data)
+                   data.id = index+1;
                     data = JSON.stringify(data);
                     localStorage.removeItem('username');
                     localStorage.removeItem('user');
