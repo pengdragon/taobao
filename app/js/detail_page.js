@@ -174,7 +174,7 @@ Detail.prototype.seItem = function(){
     console.log(this.data);
     console.log(shopList);
       // 在把全部数据存到本地
-      localStorage.shopList = JSON.stringify(shopList);  
+      //localStorage.shopList = JSON.stringify(shopList);  
      //localStorage.removeItem('shopList'); 
     console.log(JSON.parse(localStorage.getItem('shopList')));
 }
