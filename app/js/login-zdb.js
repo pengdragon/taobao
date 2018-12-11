@@ -3,6 +3,7 @@
     function login_zdb(){
       this.$none_block = document.querySelector(".none-block");
       this.$reg = this.$none_block.nextElementSibling;
+      console.log( this.$reg)
       this.$userinp = document.querySelector('#gwcdl');
       this.init = function(){
           this.panduan();

@@ -9,6 +9,23 @@ function Detail(obj){
     //添加头部和尾部
     $('#headerp').load('header.html #header',function(){
         console.log('引入头部');
+        this.$none_block = document.querySelector(".none-block");
+        this.$reg = this.$none_block.nextElementSibling;
+        this.$userinp = document.querySelector('#gwcdl');
+        if(!localStorage.username){
+            this.$none_block.innerHTML="请登录";
+            this.$userinp.value="登录";
+           
+         }else{
+             let username = localStorage.getItem('username');
+             username = '彭龙';
+             this.$none_block.innerHTML= username;
+             this.$userinp.value=username;
+             this.$none_block.style.background="orange";
+             this.$none_block.style.color="white";
+             this.$none_block.style.padding="3px";
+             //console.log(localStorage.username)
+         }
         $(function () {
             $(".navigation-bar").mouseenter(function () {
                 $(".nab-particulars").toggle(true);
@@ -146,18 +163,20 @@ Detail.prototype.seItem = function(){
         if(this.data.id == shopList[i].id) {
             // 此商品已经存在
             shopList[i].count+=this.data.count;
+            console.log( 111)
             break;
         }                         
     }
     if(i == shopList.length) {
         // 商品不存在
         shopList.push(this.data);
-        console.log(this.data);
     }     
+    console.log(this.data);
+    console.log(shopList);
       // 在把全部数据存到本地
-      //localStorage.shopList = JSON.stringify(shopList);  
-     localStorage.removeItem('shopList'); 
-    //console.log(JSON.parse(localStorage.getItem('shopList')));
+      localStorage.shopList = JSON.stringify(shopList);  
+     //localStorage.removeItem('shopList'); 
+    console.log(JSON.parse(localStorage.getItem('shopList')));
 }
 Detail.prototype.insertData = function(){
     this.$titleTxt = document.createTextNode(this.data.title)
