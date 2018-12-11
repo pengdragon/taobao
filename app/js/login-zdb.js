@@ -1,4 +1,4 @@
-var none_block = document.querySelector("none-block");
+var none_block = document.querySelector(".none-block");
 none_block.onclick=function(){
     window.location.href = "http://www.baidu.com"; 
 }
