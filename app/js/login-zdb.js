@@ -1,10 +1,39 @@
-var none_block = document.querySelector(".none-block");
-none_block.onclick=function(){
-    window.location.href = "http://www.baidu.com"; 
-}
-if(localStorage.username=""){
-    $(".none-block").append("请登录");
-}else{
-    $(".none-block").append(localStorage.username)
-}
+(function(){
+    console.log(1)
+    function login_zdb(){
+      this.$none_block = document.querySelector(".none-block");
+      this.$reg = this.$none_block.nextElementSibling;
+      this.$userinp = document.querySelector('#gwcdl');
+      this.init = function(){
+          this.panduan();
+          this.$none_block.onclick = _=>{
+            if(!localStorage.username){
+                open('page/sign_in.html');
+            }
+          }
+          this.$reg.onclick = _=>{
+              open('page/register.html');
+          }
+      }
+      this.panduan = function(){
+        if(!localStorage.username){
+            this.$none_block.innerHTML="请登录";
+            this.$userinp.value="登录";
+            console.log(4)
+         }else{
+             let username = localStorage.getItem('username');
+             username = '彭龙';
+             this.$none_block.innerHTML= username;
+             this.$userinp.value=username;
+             this.$none_block.style.background="orange";
+             this.$none_block.style.color="white";
+             this.$none_block.style.padding="3px";
+             console.log(5)
+         }
+      }
+    }
+    const $login = new login_zdb();
+    $login.init();
+}())
+
 

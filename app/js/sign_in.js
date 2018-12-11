@@ -110,8 +110,8 @@ const sign_in = (function(){
                 }
             }
             if(userVal&&passVal.length>5){
-                if(localStorage.username!=""){
-                    localStorage.username!="";
+                if(!localStorage.username){
+                   
                 sendAjax(apiObj.login,{
                     data:{username:userVal,password:passVal},
                     method:'post'
@@ -136,7 +136,8 @@ const sign_in = (function(){
                     }
                 })
             }else{
-                alert('当前已有账号登录');
+                alert('当前已有账号登录,点击进入首页');
+                location.href="../index.html";
             }
 
             } 
