@@ -135,6 +135,7 @@ Detail.prototype.init = function(){
     //点击加入购物车，将数据存储于本地
     this.$btnAddShop.click(_=>{
         this.seItem();
+        location.href='shopcatzdb.html';
     })
     console.log(localStorage.username)
 }
@@ -174,9 +175,9 @@ Detail.prototype.seItem = function(){
     console.log(this.data);
     console.log(shopList);
       // 在把全部数据存到本地
-      //localStorage.shopList = JSON.stringify(shopList);  
+      localStorage.shopList = JSON.stringify(shopList);  
      //localStorage.removeItem('shopList'); 
-    console.log(JSON.parse(localStorage.getItem('shopList')));
+    //console.log(JSON.parse(localStorage.getItem('shopList')));
 }
 Detail.prototype.insertData = function(){
     this.$titleTxt = document.createTextNode(this.data.title)

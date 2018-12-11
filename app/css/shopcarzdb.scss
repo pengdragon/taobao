@@ -111,12 +111,12 @@
 #shopcard-bigbox .shopcar-body{
     display: block;
     position: relative;
+    margin-bottom: 30px;
 }
 .shopcar-body .shopcar-bodyup{
     width: 990px;
     height: 145px;
     background-color: #FFF;
-    margin-bottom: 30px;
     zoom: 1;
 }
 .bodyup-checkbox{
@@ -314,7 +314,7 @@
 #shopcard-bigbox .shopcar-footer{
     width: 998px;
     height: 60px;
-    position: relative;
+    // position: relative;
     background: #FFF;
     line-height: 60px;
     border: 1px solid #ddd;
