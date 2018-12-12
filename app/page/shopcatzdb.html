@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>shopcar</title>
+    <link rel="stylesheet" href="../css/demo.css">
+    <link rel="stylesheet" href="../css/shopcarzdb.css">
+</head>
+<body>
+    
+    <div id="shopcard-bigbox">
+        <div class="shopcar-header">
+            <div class="shopcar1-header">
+                <div class="shopcar2-header">
+                    <div class="shopcar-checkoutbox">
+                    <div class="shopcar-checkout">
+                        <input class="zincheckout" type="checkbox" name="zcheckbox" id="zcheckbox">
+                        <!-- 全选按钮 -->
+                        <label for="zcheckbox"></label>
+                        <span class="zcheckboxqx">全选</span>
+                    </div>
+                    </div>
+                    <div class="sp-xinxi">商品信息</div>
+                    <div class="sp-guige">规格</div>
+                    <div class="sp-danjia">单价（元）</div>
+                    <div class="sp-shuliang">数量</div>
+                    <div class="sp-xiaoji">小计（元）</div>
+                    <div class="sp-caozuo">操作</div>
+                </div>
+            </div>
+        </div>
+        <!-- 购物车框架商品所属信息列 -->
+        <div class="shopcar-body">
+            <!-- <div class="shopcar-bodyup">
+           
+               <div class="bodyspxqbox">  
+            </div>  
+            </div>
+           
+            <div class="shopcar-bodydown"></div> -->
+        </div>
+        <!-- 商品具体信息数据渲染区 -->
+        <div class="shopcar-footer">
+            <div  class="clear-allbox">
+                    <a class="cleardall">删除选中</a>
+            </div>
+            <!-- 删除选中按钮 -->
+            <div class="emptybox"></div>
+            <div class="emptybox"> </div>
+            <div class="emptybox"> </div>
+            <div class="yixuansqbox">
+                <span>已选商品：</span> <a class="yixuansq" href=""></a> &nbsp;&nbsp;&nbsp;<span>件</span>
+            </div>
+            <!-- 已选商品 -->
+            <div class="sqzjbox">
+               <span>商品总价：</span>
+                <a class="sqzj" href="">
+                    0
+                </a>
+                <em>元（人民币）</em>
+            </div>
+            <!-- 商品总价 -->
+            <div class="sqjs-box">
+                <a class="sqjsa" href="">
+                    <b >去结算</b>
+                </a>
+            </div>
+            <!-- 结算按钮 -->
+        </div>
+        <!-- 购物车尾部 -->
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/shop_car.js"></script>
+    <script>
+    const shopCar = new ShopCar({ele:'.shopcar-body'});
+    shopCar.init();
+    </script>
+</body>
+</html>
