@@ -18,7 +18,7 @@
                         <input class="zincheckout" type="checkbox" name="zcheckbox" id="zcheckbox">
                         <!-- 全选按钮 -->
                         <label for="zcheckbox"></label>
-                        <span class="zcheckboxqx">全选</span>
+                        <span class="zcheckboxqx" for="zcheckbox">全选</span>
                     </div>
                     </div>
                     <div class="sp-xinxi">商品信息</div>
@@ -70,6 +70,7 @@
         </div>
         <!-- 购物车尾部 -->
     </div>
+    <script src="../js/jquery.js"></script>
     <script src="../js/shop_car.js"></script>
     <script>
     const shopCar = new ShopCar({ele:'.shopcar-body'});
