@@ -35,7 +35,9 @@ ShopCar.prototype.getData = function(){
       this.data = localStorage.shopList || '[]';
       this.data = JSON.parse(this.data);
       //console.log(shopList);
+      localStorage.setItem('shopcount',this.data.length);
      this.insertData(this.data)
+
 }
 ShopCar.prototype.insertData = function(data){
        this.$ele.innerHTML='';
@@ -130,13 +132,13 @@ ShopCar.prototype.selectShop = function(){
                 _this.numAll += Number(_this.$xiaoji[i].innerHTML);
             }
             setTimeout(function(){ _this.$sumprice.innerHTML = _this.numAll;},10);
-            localStorage.setItem('shopcount',_this.data.length);
+       
         } else {
             this.$checList.prop('checked', false);
             _this.countd=0;  
             _this.numAll=0;
             setTimeout(function(){ _this.$sumprice.innerHTML = _this.numAll;},10);
-            localStorage.setItem('shopcount',0);
+        
              }
              _this.$shopcount.innerHTML=_this.countd;
     })
@@ -192,7 +194,6 @@ ShopCar.prototype.selectShop = function(){
             }   
            
             _this.$shopcount.innerHTML=_this.countd;
-            localStorage.setItem('shopcount',_this.countd);
             //console.log(_this.numAll)//总价格
            
            

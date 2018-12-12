@@ -9,6 +9,12 @@ function Detail(obj){
     //添加头部和尾部
     $('#headerp').load('header.html #header',function(){
         console.log('引入头部');
+        var $shuzi =document.querySelector('.shuzi');
+        var $go_shopcar = document.querySelector(".d-gouwuche");
+        $go_shopcar.onclick = function(){
+            location.href="shopcatzdb.html";
+        }
+        $shuzi.innerHTML = localStorage.getItem('shopcount');
         this.$none_block = document.querySelector(".none-block");
         this.$reg = this.$none_block.nextElementSibling;
         this.$userinp = document.querySelector('#gwcdl');

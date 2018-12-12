@@ -1,4 +1,9 @@
-
+    var $shuzi = document.querySelector(".shuzi");
+    var $go_shopcar = document.querySelector(".d-gouwuche");
+    $shuzi.innerHTML = localStorage.getItem('shopcount');
+    $go_shopcar.onclick = function(){
+        location.href="page/shopcatzdb.html";
+    }
     $(".detailp").on("click","li",function(){
         let index = $(this).index('.detailp li');
         $.ajax('../json/product_list.json',{
