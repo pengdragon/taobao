@@ -14,6 +14,18 @@ function Detail(obj){
     this.$reg = this.$none_block.nextElementSibling;
     this.$userinp = document.querySelector('#gwcdl');
         console.log('引入头部');
+<<<<<<< HEAD
+=======
+        var $shuzi =document.querySelector('.shuzi');
+        var $go_shopcar = document.querySelector(".d-gouwuche");
+        $go_shopcar.onclick = function(){
+            location.href="shopcatzdb.html";
+        }
+        $shuzi.innerHTML = localStorage.getItem('shopcount');
+        this.$none_block = document.querySelector(".none-block");
+        this.$reg = this.$none_block.nextElementSibling;
+        this.$userinp = document.querySelector('#gwcdl');
+>>>>>>> pl
         if(!localStorage.username){
             this.$none_block.innerHTML="请登录";
             this.$userinp.value="登录";
@@ -26,10 +38,14 @@ function Detail(obj){
              this.$none_block.style.background="orange";
              this.$none_block.style.color="white";
              this.$none_block.style.padding="3px";
+<<<<<<< HEAD
              console.log(localStorage.username)
          }
          this.$reg.onclick = function(){
              open('register.html');
+=======
+             //console.log(localStorage.username)
+>>>>>>> pl
          }
         $(function () {
             $(".navigation-bar").mouseenter(function () {
@@ -140,6 +156,7 @@ Detail.prototype.init = function(){
     //点击加入购物车，将数据存储于本地
     this.$btnAddShop.click(_=>{
         this.seItem();
+        location.href='shopcatzdb.html';
     })
     console.log(localStorage.username)
 }
@@ -168,17 +185,19 @@ Detail.prototype.seItem = function(){
         if(this.data.id == shopList[i].id) {
             // 此商品已经存在
             shopList[i].count+=this.data.count;
+            console.log( 111)
             break;
         }                         
     }
     if(i == shopList.length) {
         // 商品不存在
         shopList.push(this.data);
-        console.log(this.data);
     }     
+    console.log(this.data);
+    console.log(shopList);
       // 在把全部数据存到本地
-      //localStorage.shopList = JSON.stringify(shopList);  
-     localStorage.removeItem('shopList'); 
+      localStorage.shopList = JSON.stringify(shopList);  
+     //localStorage.removeItem('shopList'); 
     //console.log(JSON.parse(localStorage.getItem('shopList')));
 }
 Detail.prototype.insertData = function(){
