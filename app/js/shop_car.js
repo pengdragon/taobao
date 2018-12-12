@@ -23,6 +23,12 @@ ShopCar.prototype.init = function(){
     this.getData();
     this.selectShop();
     this.addShopCount();
+    this.$gomoney.onclick = _=>{
+        if( this.numAll>0) alert('请支付'+      this.numAll);
+        else alert('请先选择商品');
+       
+    }
+    
 }
 ShopCar.prototype.getData = function(){
       //localStorage.clear();
@@ -33,7 +39,6 @@ ShopCar.prototype.getData = function(){
 }
 ShopCar.prototype.insertData = function(data){
        this.$ele.innerHTML='';
-       this.$sumprice.innerHTML='0';
         data.forEach((item, index) => {
                 var $div = document.createElement('div');
                 $div.setAttribute('class','shopcar-bodyup');
@@ -68,11 +73,11 @@ ShopCar.prototype.insertData = function(data){
             </div>
             <div class="spjiahaoanniu-div">
                 <div class="spjiajiangn">
-                    <a class="spjianhaobtn reduceCount">-</a>
+                    <a class="spjianhaobtn reduceCount" style="cursor:pointer;text-decoration:none;">-</a>
                     <!-- 减号 -->
                     <input class="sptext" type="text" name="spval" id="spval" value=${this.data[index].count}>
                     <!-- 文字区 -->
-                    <a class="spjiahaobtn addCount">+</a>
+                    <a class="spjiahaobtn addCount" style="cursor:pointer;text-decoration:none;">+</a>
                     <!-- 加号 -->
                 </div>
               </div>
@@ -93,29 +98,45 @@ ShopCar.prototype.insertData = function(data){
         
         <!-- 商品具体信息数据渲染区 -->
                 `;
-                 //this.$xiaoji = document.querySelector('.spxiaoji');
+                
                  //console.log(this.$xiaoji)
                //this.money +=Number(this.data[index].price*this.data[index].count);
                  //this.$sumprice.innerHTML= Number(this.$sumprice.innerHTML)+Number(this.$xiaoji.innerHTML);
                 this.$ele.appendChild($div);       
-                this.$shopcount.innerHTML=this.countd;    
+                this.$shopcount.innerHTML=this.countd;   
+                this.$sumprice.innerHTML=0; 
             });
-        
+           
 }
 ShopCar.prototype.selectShop = function(){
+    //复选框集合
     this.$checList = $(".spdanxuan-d");
-    console.log( this.$checList);
+    this.$xiaoji = document.querySelectorAll('.spxiaoji');
+    //console.log( this.$checList);
     let _this = this;
+    const xiaojiAll = [];
+    const clearindex = [];
+    const clearobj =[];
+    this.numAll =0;
+    //全选框的点击
    this.$checkAll.click(_=> {
         if(this.$checkAll.prop('checked')) {
             console.log(444)
             //全选选中， this.$checList集合里的每个元素都选中
             this.$checList.prop('checked',true); 
             this.countd = this.data.length; 
-            console.log(this.countd)
+            console.log(this.countd);
+            for(var i =0;i<_this.data.length;i++){
+                _this.numAll += Number(_this.$xiaoji[i].innerHTML);
+            }
+            setTimeout(function(){ _this.$sumprice.innerHTML = _this.numAll;},10);
+            localStorage.setItem('shopcount',_this.data.length);
         } else {
             this.$checList.prop('checked', false);
             _this.countd=0;  
+            _this.numAll=0;
+            setTimeout(function(){ _this.$sumprice.innerHTML = _this.numAll;},10);
+            localStorage.setItem('shopcount',0);
              }
              _this.$shopcount.innerHTML=_this.countd;
     })
@@ -135,15 +156,62 @@ ShopCar.prototype.selectShop = function(){
      })
      for(let i=0;i<_this.data.length;i++){
         _this.$checList[i].onclick = function(){
+            //如果选中
             if(this.checked==true){
+                _this.numAll = 0;
                _this.countd++;
                console.log(_this.countd);
+               let father = this.parentNode.parentNode.parentNode.parentNode;
+               console.log(father)
+               _this.xiaoji =this.parentNode.parentNode.lastElementChild.previousElementSibling.firstElementChild;
+                xiaojiAll.push(_this.xiaoji);
+                console.log(xiaojiAll);
+                xiaojiAll.forEach(_=>{
+                    //总价钱，将每个小计放到数组了，遍历累加
+                    _this.numAll+=Number(_.innerHTML)
+                });
+                _this.$sumprice.innerHTML=0;
+                setTimeout(_=>{ _this.$sumprice.innerHTML = _this.numAll;},10);
+                clearobj.push(father);
+                //console.log(clearindex);
+                
+                //入股没有选中 
             }else if(this.checked==false){
                 _this.countd--;
                 console.log(_this.countd);
+                xiaojiAll.splice(xiaojiAll.length-1,1);
+                clearobj.splice(clearobj.length-1,1);
+                _this.numAll = 0;
+                //console.log(xiaojiAll);
+                xiaojiAll.forEach(_=>{
+                    _this.numAll+=Number(_.innerHTML)
+                });
+                _this.$sumprice.innerHTML=0;
+                setTimeout(function(){ _this.$sumprice.innerHTML = _this.numAll;},10);
+                console.log(clearindex);
             }   
+           
             _this.$shopcount.innerHTML=_this.countd;
+            localStorage.setItem('shopcount',_this.countd);
+            //console.log(_this.numAll)//总价格
+           
+           
         }
+    }
+    //获取到勾选的dom元素。放在一个数组里，进行遍历删除，更新本地数据，重新渲染；
+    this.$cleanAdd.onclick = function(){
+       var arr = [...new Set(clearindex)];
+        console.log(arr);
+        clearobj.forEach(obj=>{
+         var data = _this.data[obj.index];
+         _this.data.splice(obj.index,1);
+         obj.remove();
+         localStorage.shopList = JSON.stringify(_this.data);
+         _this.getData();
+
+        })
+           
+        
     }
     
 }
@@ -153,11 +221,10 @@ ShopCar.prototype.addShopCount = function(){
     this.$addCount = document.querySelectorAll('.addCount');
     this.$countinp = document.querySelectorAll('.sptext');
     var _this = this;
-    console.log( this.$ele)
    this.$ele.oninput = function(e){
     e = e || window.event;
     var target = e.target || e.srcElement;
-    if(target.nodeName==="INPUT"){
+    if(target.className.includes('sptext')){
         var index = target.parentNode.parentNode.parentNode.parentNode.parentNode.index;
         console.log(index)
         //let data= target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.children[index];
@@ -181,6 +248,7 @@ ShopCar.prototype.addShopCount = function(){
         data.count = Number(count);
         localStorage.shopList = JSON.stringify(_this.data);
         _this.getData(_this.data);
+        _this.selectShop();
     }
     if(target.className.includes('addCount')){
         var index = target.parentNode.parentNode.parentNode.parentNode.parentNode.index;
@@ -192,6 +260,7 @@ ShopCar.prototype.addShopCount = function(){
         data.count = Number(count);
         localStorage.shopList = JSON.stringify(_this.data);
         _this.getData(_this.data);
+        _this.selectShop();
 
     }
     if(target.className.includes("clearp")){
@@ -201,10 +270,12 @@ ShopCar.prototype.addShopCount = function(){
         _this.data.splice(index,1);
         father.remove();
         localStorage.shopList = JSON.stringify(_this.data);
+        _this.getData();
     }
    }
    
 }
+
 
 
    
