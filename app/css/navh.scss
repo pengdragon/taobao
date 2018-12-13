@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+	text-decoration: none !important;
+}
+i,em{
+	font-style: normal;
+}
+html{
+    background-color: #f2f2f2;
+}
+.ng-nav-barh-top{
+    margin-top: 147px;
+    margin-left: 100px;
+    height: 38px;
+    background: #fff;
+    position: absolute;
+    left: 60px;
+    top: 0;
+}
+.ng-nav-barh-top-connet{
+    width: 1190px;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top: 0;
+}
+.ng-nav-barh-top-connet i{
+    float: left;
+    width: 190px;
+    height: 38px;
+    box-sizing: border-box;
+    background-color: #ff9900;
+    margin-right: 10px;
+    padding-left: 26px;
+}
+.ng-nav-barh-top-connet i a{
+    font-size: 14px;
+    color: #fff;
+    line-height: 38px;  
+}
+.ng-nav-barh-top-connet i a img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ng-nav-barh-top-connet ul{
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.ng-nav-barh-top-connet li{
+    float: left;
+    padding-left: 5px;
+    height: 38px;
+    font-size: 14px;
+    color: #fff;
+}
+.ng-nav-barh-top-connet ul li a{
+    float: left;
+    padding: 0 0px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 38px;
+    font-weight: 900;
+    color: #333;
+    box-sizing: border-box;
+}
+.ng-nav-barh-top-connet ul li img{
+    width: 25px;
+    position: relative;
+    left: -33px;
+    bottom: -34px;
+}
+.ng-nav-barh-top-connet ul li:hover img{
+    transition: all 0.4s linear;
+    transform: translateY(-5px);
+}
+.ng-nav-barh-top-connet ul li img{
+    transition: all 0.4s linear;
+    transform: translateY(+6px);
+}
+.ng-nav-barh-top-connet ul li:nth-child(3) img{
+    left: -44px;
+}
+.ng-nav-barh-top-connet ul li:nth-child(5) img{
+    left: -42px;
+}
+
+.ng-nav-barh-top-connet ul li:nth-child(6) img{
+    left: -42px;
+}
+
+.ng-nav-barh-top-connet ul li:nth-child(7) img{
+    left: -42px;
+}
+.ng-nav-barh-top-connet ul li:nth-child(8) img{
+    left: -50px;
+}
+.ng-nav-barh-top-connet ul li:nth-child(9) img{
+    left: -26px;
+}
+.ng-nav-barh-top-connet ul li:nth-child(10) img{
+    left: -26px;
+}
+.ng-nav-barh-top-connet ul li:hover a{
+    color: #ff6600;
+}
+.ng-nav-barh-top-connet p{
+    float: right;
+    margin-right: 2px;
+    box-sizing: border-box;
+}
+.ng-nav-barh-top-connet p a{
+    position: absolute;
+    right: 0;
+    top: -1px;
+    float: left;
+    box-sizing: border-box;
+}
+.ng-nav-barh-top-connet p a img{  
+    width: 170px;
+    height: 38px;
+}
+.ng-nav-barh{
+    position: absolute;
+    left: 160px;
+    top: 184px;
+    height: 480px;
+    width: 190px;
+    z-index: 999;
+    background-color: #252221;
+    box-sizing: border-box;
+}
+.ng-nav-barh ul{
+    box-sizing: border-box;
+    border-top: 1px solid #252221;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #252221;
+    
+}
+.ng-nav-barh ul a{
+    color: #fff;
+    font-size: 14px;
+}
+.ng-nav-barh ul li{
+    width: 190px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 8px 0 10px;
+    box-sizing: border-box;
+}
+.ng-nav-barh ul li p a{
+    color: #fff;
+    font-size: 14px;
+}
+.ng-nav-barh ul li em{
+    font-size: 12px;
+    color: #6c6a6a
+} 
+.ng-nav-barh ul li a:hover{
+    color: #ff6600
+}
+.ng-nav-barh ul li em:hover{
+    color: #efefef
+}
+.index-sort-detail02{
+    position: absolute;
+    left: 190px;
+    top: -1px;
+    min-height: 482px;
+    background-color: #fff;
+    border-top: 1px solid #252221;
+    border-bottom: 1px solid #252221;
+    box-sizing: border-box;
+    display: none;
+}
+.ng-nav-barh ul li:hover .index-sort-detail02{
+        display: block;
+}
+.sort-btn{
+    width: 1000px;
+    height: 46px;
+    background-color: #fff;
+    padding-left: 20px;
+}
+.sort-btn a {
+    display: block;
+    float: left;
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+    color: #fff;
+    background-color: #ff9900;
+    font-size: 14px;
+    margin: 0 12px;
+    padding: 0 11px;
+    margin-top: 10px;
+}
+.cate-list dl{
+    float: left;
+    width: 802px;
+    height: auto;
+    padding-left: 20px;
+}
+.cate-list dl dt{
+    float: left;
+    width: 84px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: 900;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+.cate-list dl dt a{
+    float: left;
+    display: block;
+    width: 84px;
+    height: 20px;
+    color: #252221;
+    overflow: hidden;
+    text-decoration: none;
+}
+.cate-list dl dd{
+    float: right;
+    width: 700px;
+    font-size: 10px;
+    line-height: 20px;
+    overflow: hidden;
+    margin-top: 5px;
+    padding-bottom: 8px;
+}
+.cate-list dl dd a:nth-child(1){
+    color: #ff9900;
+}
+.cate-list dl dd a{
+    color: #252221;
+    margin-right: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+.cate-list a:hover{
+    color: #ff6600;
+}
+
+.actShow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 199px;
+    height: 100%;
+    overflow: hidden;
+    background:#f3f3f3;
+    border-right: 1px solid #252221;
+}
+.actShow .brandlist{
+    width: 182px;
+    margin: 10px 0 0 8px;
+}
+.actShow .brandlist a{
+    float: left;
+    width: 90px;
+    height: 45px;
+    margin: 0 1px 1px 0;
+    padding-top: 7px;
+    background-color: #fff;
+}
+.actShow .brandList img {
+    width: 90px;
+    height: 45px;
+    margin: 0 auto;
+}
+.actShow .actlist {
+    width: 180px;
+    margin: 11px 0 0 8px;
+}
+.actShow .actlist {
+    float: left;
+    width: 180px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+.box{
+    width: 1190px;
+    height: 50px;
+    background-color: #f3f3f3;
+    position: absolute;
+    top: 800px;
+    left: 0;
+}
+
+
+

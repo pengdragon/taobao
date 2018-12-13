@@ -150,6 +150,7 @@ Detail.prototype.init = function(){
     this.$btnAddShop.click(_=>{
         this.seItem();
       //详情页里购物车的数量实时显示
+      
         this.$shuzi.innerHTML =Number(localStorage.getItem('shopcount'))+1;
         console.log( this.$shuzi.innerHTML)
         //location.href='shopcatzdb.html';
