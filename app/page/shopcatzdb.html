@@ -5,10 +5,14 @@
     
     <title>shopcar</title>
     <link rel="stylesheet" href="../css/demo.css">
+    <link rel="stylesheet" href="../fonts/font_958122_4gaqox00jt8/iconfont.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/demo.css">
     <link rel="stylesheet" href="../css/shopcarzdb.css">
 </head>
 <body>
-    
+    <header id="headerp"></header>
+    <div id="shopBox" style="height: 550px;border:1px solid #ccc;width:1110px;margin:0 auto;padding:5px;margin-bottom:10px;">
     <div id="shopcard-bigbox">
         <div class="shopcar-header">
             <div class="shopcar1-header">
@@ -31,6 +35,7 @@
             </div>
         </div>
         <!-- 购物车框架商品所属信息列 -->
+        <div id="shop-min-box" style="height: 400px;overflow-y:auto;width: 1056px;">
         <div class="shopcar-body">
             <!-- <div class="shopcar-bodyup">
            
@@ -39,7 +44,7 @@
             </div>
            
             <div class="shopcar-bodydown"></div> -->
-        </div>
+        </div></div>
         <!-- 商品具体信息数据渲染区 -->
         <div class="shopcar-footer">
             <div  class="clear-allbox">
@@ -70,11 +75,48 @@
         </div>
         <!-- 购物车尾部 -->
     </div>
+</div>
+    <footer id="footerp"></footer>
     <script src="../js/jquery.js"></script>
     <script src="../js/shop_car.js"></script>
     <script>
     const shopCar = new ShopCar({ele:'.shopcar-body'});
     shopCar.init();
+    $('#headerp').load('header.html #header',function(){
+        $(this).css({'margin-bottom':20});
+        let $clearShop = document.querySelector('.d-gouwuche');
+        $clearShop.remove();
+        let $none_block = document.querySelector(".none-block");
+        let $reg =$none_block.nextElementSibling;
+        let $userinp = document.querySelector('#gwcdl');
+        console.log('引入头部');
+        
+        let $shuzi =document.querySelector('.shuzi');
+        //$shuzi.innerHTML = localStorage.getItem('shopcount');
+        var $go_shopcar = document.querySelector(".d-gouwuche");
+       
+        $none_block = document.querySelector(".none-block");
+        $reg = $none_block.nextElementSibling;
+        if(!localStorage.username){
+            $none_block.innerHTML="请登录";
+            $userinp.value="登录";
+           
+         }else{
+             let username = localStorage.getItem('username');
+             username = '彭龙';
+             $none_block.innerHTML= username;
+             $none_block.style.background="orange";
+             $none_block.style.color="white";
+            $none_block.style.padding="3px";
+             console.log(localStorage.username)
+         }
+        $reg.onclick = function(){
+             open('register.html');
+         }
+    })
+    $('#footerp').load('header.html #footerd',function(){
+
+    })
     </script>
 </body>
 </html>
