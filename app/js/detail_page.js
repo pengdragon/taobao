@@ -8,24 +8,21 @@ function Detail(obj){
     console.log(this.$title)
     this.data = JSON.parse(localStorage.getItem('product'));
 
-    $('#headerp').load('header.html #header',function(){
+    $('#headerp').load('header.html #header',_=>{
          //登录后的状态
     this.$none_block = document.querySelector(".none-block");
     this.$reg = this.$none_block.nextElementSibling;
     this.$userinp = document.querySelector('#gwcdl');
         console.log('引入头部');
-<<<<<<< HEAD
-=======
-        var $shuzi =document.querySelector('.shuzi');
+        this.$shuzi =document.querySelector('.shuzi');
+        this.$shuzi.innerHTML = localStorage.getItem('shopcount');
         var $go_shopcar = document.querySelector(".d-gouwuche");
         $go_shopcar.onclick = function(){
             location.href="shopcatzdb.html";
         }
-        $shuzi.innerHTML = localStorage.getItem('shopcount');
         this.$none_block = document.querySelector(".none-block");
         this.$reg = this.$none_block.nextElementSibling;
         this.$userinp = document.querySelector('#gwcdl');
->>>>>>> pl
         if(!localStorage.username){
             this.$none_block.innerHTML="请登录";
             this.$userinp.value="登录";
@@ -38,14 +35,10 @@ function Detail(obj){
              this.$none_block.style.background="orange";
              this.$none_block.style.color="white";
              this.$none_block.style.padding="3px";
-<<<<<<< HEAD
              console.log(localStorage.username)
          }
          this.$reg.onclick = function(){
              open('register.html');
-=======
-             //console.log(localStorage.username)
->>>>>>> pl
          }
         $(function () {
             $(".navigation-bar").mouseenter(function () {
@@ -156,7 +149,10 @@ Detail.prototype.init = function(){
     //点击加入购物车，将数据存储于本地
     this.$btnAddShop.click(_=>{
         this.seItem();
-        location.href='shopcatzdb.html';
+      //详情页里购物车的数量实时显示
+        this.$shuzi.innerHTML =Number(localStorage.getItem('shopcount'))+1;
+        console.log( this.$shuzi.innerHTML)
+        //location.href='shopcatzdb.html';
     })
     console.log(localStorage.username)
 }
@@ -199,6 +195,7 @@ Detail.prototype.seItem = function(){
       localStorage.shopList = JSON.stringify(shopList);  
      //localStorage.removeItem('shopList'); 
     //console.log(JSON.parse(localStorage.getItem('shopList')));
+    this.$shuzi.innerHTML = localStorage.getItem('shopcount');
 }
 Detail.prototype.insertData = function(){
     this.$titleTxt = document.createTextNode(this.data.title)

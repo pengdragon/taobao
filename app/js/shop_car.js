@@ -1,13 +1,11 @@
 function ShopCar(obj){
     if(typeof obj.ele ==="string")obj.ele= document.querySelector(obj.ele);
     this.$ele = obj.ele;
-<<<<<<< HEAD
     this.$shopcount = document.querySelector('.yixuansq');
     this.$sumprice = document.querySelector(".sqzj");
     this.$gomoney = document.querySelector('.sqjsa');
     this.$cleanAdd = document.querySelector('.cleardall');
     //console.log(this.$sumprice)
-=======
     //已选商品数量
     this.countd=0;
     //用于计数单个商品
@@ -24,42 +22,32 @@ function ShopCar(obj){
     //全选
     this.$checkAll = $('.zincheckout');
     console.log(this.$checkAll)
->>>>>>> pl
 }
 ShopCar.prototype.init = function(){
     console.log(this.$ele);
     this.getData();
-<<<<<<< HEAD
-=======
     this.selectShop();
     this.addShopCount();
     this.$gomoney.onclick = _=>{
-        if( this.numAll>0) alert('请支付'+      this.numAll);
-        else alert('请先选择商品');
-       
-    }
-    
->>>>>>> pl
+        if(localStorage.getItem('username')){
+            if( this.numAll>0) alert('请支付'+      this.numAll);
+            else alert('请先选择商品'); 
+        }else{
+            alert('请先登录');
+        }
+        }  
 }
 ShopCar.prototype.getData = function(){
       //localStorage.clear();
       this.data = localStorage.shopList || '[]';
       this.data = JSON.parse(this.data);
       //console.log(shopList);
-<<<<<<< HEAD
-     this.insertData(this.data)
-}
-ShopCar.prototype.insertData = function(data){
-       this.$ele.innerHTML='';
-       this.$sumprice.innerHTML='0';
-=======
       localStorage.setItem('shopcount',this.data.length);
      this.insertData(this.data)
 
 }
 ShopCar.prototype.insertData = function(data){
        this.$ele.innerHTML='';
->>>>>>> pl
         data.forEach((item, index) => {
                 var $div = document.createElement('div');
                 $div.setAttribute('class','shopcar-bodyup');
@@ -69,13 +57,7 @@ ShopCar.prototype.insertData = function(data){
                 <!-- 此处商品具体信息 -->
                 <div class="bodyup-checkbox">
                     <!-- 商品信息上面店铺名 -->
-<<<<<<< HEAD
-                   <div class="bodyup-checkoutx">
-                    <input class="DP-all" type="checkbox" name="DPall-check" id="DPall-check">
-                </div>
-=======
                  
->>>>>>> pl
               
                 </div>
                <div class="bodyspxqbox">
@@ -100,19 +82,11 @@ ShopCar.prototype.insertData = function(data){
             </div>
             <div class="spjiahaoanniu-div">
                 <div class="spjiajiangn">
-<<<<<<< HEAD
-                    <a class="spjianhaobtn" href="">-</a>
-                    <!-- 减号 -->
-                    <input class="sptext" type="text" name="spval" id="spval" value=${this.data[index].count}>
-                    <!-- 文字区 -->
-                    <a class="spjiahaobtn" href="">+</a>
-=======
                     <a class="spjianhaobtn reduceCount" style="cursor:pointer;text-decoration:none;">-</a>
                     <!-- 减号 -->
                     <input class="sptext" type="text" name="spval" id="spval" value=${this.data[index].count}>
                     <!-- 文字区 -->
                     <a class="spjiahaobtn addCount" style="cursor:pointer;text-decoration:none;">+</a>
->>>>>>> pl
                     <!-- 加号 -->
                 </div>
               </div>
@@ -122,11 +96,7 @@ ShopCar.prototype.insertData = function(data){
                 </div>
                 <div class="spshanchubox">
                     <a class="spshanchu" href="#">
-<<<<<<< HEAD
-                        <b>删除此商品</b>
-=======
                         <b class="clearp">删除此商品</b>
->>>>>>> pl
                     </a>
                 </div>
                 </div> 
@@ -137,63 +107,6 @@ ShopCar.prototype.insertData = function(data){
         
         <!-- 商品具体信息数据渲染区 -->
                 `;
-<<<<<<< HEAD
-                 this.$xiaoji = document.querySelector('.spxiaoji');
-                 console.log(this.$xiaoji)
-               this.money +=Number(this.data[index].price*this.data[index].count);
-                 //this.$sumprice.innerHTML= Number(this.$sumprice.innerHTML)+Number(this.$xiaoji.innerHTML);
-                this.$ele.appendChild($div);
-                 this.$shopcount.innerHTML=this.data.length;
-            });
-            this.$sumprice.innerHTML = this.money;
-    
-}
-   
-// 商品名称:<span class='title'>${data[index].title}</span></br>
-// 商品价格<span class='price'>${data[index].price}</span></br>
-// 购买数量<input class="count" value=${data[index].count} placeholder="请输入数量" /></br>
-// 小计<span>${data[index].price * data[index].count}</span></br>
-// <button>删除</button>
-// var count = (function() {
-//     // 获取所有添加按钮
-//     var $addBtnAll = document.querySelectorAll('.add');
-//     // 获取所有清除按钮
-//     var $clearBtnAll =  document.querySelectorAll('.clear')
-//     return {
-//         init() {
-//             this.event();
-//         },
-//         event() {
-//             const _this = this;
-//             for(var i = 0; i < $addBtnAll.length; i++) {
-//                     (function() {
-//                         var  count = 0
-//                         $addBtnAll[i].onclick = function() {
-//                             count++;
-//                             _this.set(this.parentNode, count, 'p');
-//                         }
-//                         $clearBtnAll[i].onclick = function() {
-//                             count = 0;
-//                             _this.set(this.parentNode, count, 'p')
-//                         }
-
-//                     }())
-                
-//             }
-//         },
-//         set(ele, val, child) {
-//             // 如果传入了子类名
-//             if(child) {
-//                 ele.querySelector(child).innerHTML = val;
-//             } else {
-//                 ele.innerHTML = val;
-//             }
-//         }
-//     }
-// }())
-// count.init()
-
-=======
                 
                  //console.log(this.$xiaoji)
                //this.money +=Number(this.data[index].price*this.data[index].count);
@@ -374,5 +287,4 @@ ShopCar.prototype.addShopCount = function(){
 
 
    
->>>>>>> pl
 
