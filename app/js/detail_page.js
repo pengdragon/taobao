@@ -148,11 +148,22 @@ Detail.prototype.init = function(){
     })
     //点击加入购物车，将数据存储于本地
     this.$btnAddShop.click(_=>{
-        this.seItem();
-      //详情页里购物车的数量实时显示
-      
-        this.$shuzi.innerHTML =Number(localStorage.getItem('shopcount'))+1;
-        console.log( this.$shuzi.innerHTML)
+        if(localStorage.username){
+            this.seItem();
+            //详情页里购物车的数量实时显示
+            
+              this.$shuzi.innerHTML =Number(localStorage.getItem('shopcount'))+1;
+              alert('已加入购物车，点击右上方购物车进行查看商品')
+              console.log( this.$shuzi.innerHTML)
+        }else{
+            alert('请先登录,这一步的操作我是要跳转到登录页的，但是考虑到测试师还要去注册还要去登录，不登录的话就无法测试购物车模块了');
+            //location.href="sign_in.html";
+            this.seItem();
+            //详情页里购物车的数量实时显示
+            
+              this.$shuzi.innerHTML =Number(localStorage.getItem('shopcount'))+1;
+        }
+       
         //location.href='shopcatzdb.html';
     })
     console.log(localStorage.username)
