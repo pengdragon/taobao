@@ -12,7 +12,7 @@
 
     */
     var rev = require('gulp-rev');
-    var revCollector = require('gulp-rev-collector');
+    // var revCollector = require('gulp-rev-collector');
     var gulp = require('gulp');
     var connect = require('gulp-connect');
     var uglify = require('gulp-uglify');//js压缩
@@ -32,6 +32,10 @@
             'connect',
         )
     })
+    gulp.task('xxx',function(){
+        console.log(555)
+    })
+  
     gulp.task('images',function(){//图片压缩
         gulp.src('app/images/**/*')
         .pipe(image())

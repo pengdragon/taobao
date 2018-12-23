@@ -122,7 +122,7 @@ const sign_in = (function(){
                     console.log(res);
                     if(res.code=="10000"){
                         console.log(userVal);
-                       user = {username:userVal, password:passVal};
+                       var user = {username:userVal, password:passVal};
                        user = JSON.stringify(user);
                        localStorage.setItem("user",user);
                         this.login_error.style.display="none";
